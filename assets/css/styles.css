@@ -1,0 +1,85 @@
+@import url('./clash-display.css');
+@import url('./general-sans.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --brand-blue: #053F92;
+    --brand-orange: #FE9F0F;
+    --blue-100: #CFE3FF;
+    --blue-900: #002B69;
+}
+
+body{
+    font-family: GeneralSans-Regular
+}
+
+.clashdisplay{
+    font-family: ClashDisplay-Variable
+}
+
+.generalsans{
+    font-family: GeneralSans-Variable
+}
+
+.custom-blue-btn{
+    background: linear-gradient(to bottom, #73ACFF 0%, #347DE4 100%);
+    color: white;
+    font-family: GeneralSans-Semibold;
+    border-radius: 9rem;
+    height: max-content;
+    padding: 14px 16px
+}
+
+.custom-yellow-btn{
+    background: linear-gradient(to bottom, #FFB13A 0%, #D58000 100%);
+    color: white;
+    font-family: GeneralSans-Semibold;
+    border-radius: 9rem;
+    height: max-content;
+    padding: 14px 20px
+}
+
+.yellow-link{
+    color: var(--brand-orange);
+    text-decoration: underline;
+    font-family: GeneralSans-Semibold;
+    text-underline-offset: 4px
+}
+
+.metric-box{
+    padding: 2rem;
+    box-sizing: border-box;
+    border: 1px solid var(--blue-100);
+    background: linear-gradient(to bottom, #F9F9F9 0%, #F4FAFF 100%);
+    border-radius: 1rem;
+}
+
+.metric-heading{
+    font-family: ClashDisplay-Medium;
+    color: var(--brand-blue);
+    font-size: 28px; 
+}
+
+.metric-number{
+    font-family: ClashDisplay-SemiBold;
+    color: var(--brand-orange);
+    font-size: 64px; 
+}
+
+.metric-description{
+    font-family: GeneralSans-Regular;
+    color: var(--blue-900);
+    font-size: 1rem; 
+}
+
+.courses-card-box{
+    padding: 1.5rem;
+    box-sizing: border-box;
+    border: 1px solid var(--blue-100);
+    /* border: 1px solid linear-gradient(to bottom, #FFFFFF 0%, #CFE3FF 100%); */
+    background: linear-gradient(to bottom, #FFFFFF 0%, #F4FAFF 100%);
+    border-radius: 1rem;
+}
