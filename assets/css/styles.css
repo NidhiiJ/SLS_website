@@ -24,6 +24,10 @@ body{
     font-family: GeneralSans-Variable
 }
 
+#main-wrapper{
+    overflow-x: hidden
+}
+
 .custom-blue-btn{
     background: linear-gradient(to bottom, #73ACFF 0%, #347DE4 100%);
     color: white;
@@ -75,7 +79,14 @@ body{
     font-size: 1rem; 
 }
 
+.courses-card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 .courses-card-box{
+    height: 100%;
     padding: 1.5rem;
     box-sizing: border-box;
     border: 1px solid var(--blue-100);
@@ -83,3 +94,20 @@ body{
     background: linear-gradient(to bottom, #FFFFFF 0%, #F4FAFF 100%);
     border-radius: 1rem;
 }
+
+.gradient-circle {
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      #ffbd50 0%,
+      #ffc360 13%,
+      #ffd184 47%,
+      #ffd999 74%,
+      #ffdda2 91%
+    );
+    filter: blur(260px); /* Apply layer blur effect */
+  }
+
+  
