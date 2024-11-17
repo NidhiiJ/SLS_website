@@ -51,7 +51,7 @@
       </div>
       
       <div id="aboutus-wrapper" class="relative w-full h-fit">
-        <div class="gradient-circle absolute top-[80%] left-[-40%] z-[-10]"></div>
+        <div class="gradient-circle-yellow absolute top-[80%] left-[-40%] z-[-10]"></div>
         <div id="aboutus-section" class="flex justify-between gap-10 px-[7.5rem] pt-40">
           <h2 class="text-[46px] lg:text-[56px] shrink-0 clashdisplay font-medium">About Us</h2>
           <span class="text-justify  max-w-[60%] text-[1.2rem]">Sprachenatelier Language Studio has been training students who aspire to pursue higher education in German-speaking Countries since 2013. We strive to provide you with the best learning experience and set up for success by prioritizing German language learning and understanding of German culture.</span>
@@ -59,7 +59,7 @@
       </div>
 
       <div id="withusyoucan-wrapper" class="relative w-full h-fit">
-        <div class="gradient-circle w-full absolute top-[46%] right-[-40%] z-[-10]"></div>
+        <div class="gradient-circle-yellow w-full absolute top-[46%] right-[-40%] z-[-10]"></div>
         <div id="withusyoucan-section" class="mx-[7.5rem] mt-40">
           <div class="mb-20">
             <h2 class="text-[46px] text-center lg:text-[56px] shrink-0 clashdisplay font-medium" >With Us, You Can</h2>
@@ -115,8 +115,8 @@
       </div>
 
       <div id="metrics-wrapper" class="relative overflow-x-clip">
-        <div class="gradient-circle absolute top-[-20%] left-[-40%] z-[-10]"></div>
-        <div class="gradient-circle absolute top-[60%] right-[-40%] z-[-10]"></div>
+        <div class="gradient-circle-yellow absolute top-[-20%] left-[-40%] z-[-10]"></div>
+        <div class="gradient-circle-yellow absolute top-[60%] right-[-40%] z-[-10]"></div>
         <div id="metrics-section" class="mx-[7.5rem] mt-40 grid grid-cols-2 gap-6">
           <div class="flex flex-col gap-6 h-full">
             <div class="flex flex-col metric-box h-full">
@@ -261,78 +261,139 @@
         </div>
       </div>
 
-      <div class="blogs-section">
-        Blogs
+      <div id="blogs-section" class="mx-[7.5rem] mt-40">
+        <div class="flex flex-col items-center mb-24">
+          <span class="generalsans font-semibold text-[var(--brand-blue)]">LATEST BLOGS</span>
+          <h2 class="w-[60%] text-[46px] text-center lg:text-[56px] shrink-0 clashdisplay font-medium leading-tight">German language insights curated just for you</h2>
+        </div>
+        <div class="grid grid-cols-3 gap-8">
+          <div class="blog-card">
+            <img src="./assets/images/blog-cover-1.jpg" alt="">
+            <div class="blog-details-wrapper">
+              <div class="Blog-details-container">
+                <span class="blog-category">Category - 01 April, 2024</span>
+                <div class="blog-details">
+                  <span class="blog-title">Lorem Ipsum</span>
+                  <span class="blog-description">Lorem ipsum dolor sit amet consectetur. Platea senectus turpis vel praesent malesuada aliquam blandit semper.</span>
+                </div>
+              </div>
+              <button class="custom-yellow-btn w-max">Learn More</button>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="./assets/images/blog-cover-1.jpg" alt="">
+            <div class="blog-details-wrapper">
+              <div class="Blog-details-container">
+                <span class="blog-category">Category - 01 April, 2024</span>
+                <div class="blog-details">
+                  <span class="blog-title">Lorem Ipsum</span>
+                  <span class="blog-description">Lorem ipsum dolor sit amet consectetur. Platea senectus turpis vel praesent malesuada aliquam blandit semper.</span>
+                </div>
+              </div>
+              <button class="custom-yellow-btn w-max">Learn More</button>
+            </div>
+          </div>
+          <div class="blog-card">
+            <img src="./assets/images/blog-cover-1.jpg" alt="">
+            <div class="blog-details-wrapper">
+              <div class="Blog-details-container">
+                <span class="blog-category">Category - 01 April, 2024</span>
+                <div class="blog-details">
+                  <span class="blog-title">Lorem Ipsum</span>
+                  <span class="blog-description">Lorem ipsum dolor sit amet consectetur. Platea senectus turpis vel praesent malesuada aliquam blandit semper.</span>
+                </div>
+              </div>
+              <button class="custom-yellow-btn w-max">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <div class="mt-14 flex flex-row justify-center">
+          <button class="custom-yellow-outline-btn">View More</button>
+        </div>
       </div>
 
-      <div class="downloadbrochure-section">
-        Download Brochure
+      <div id="downloadbrochure-section" class="relative h-screen w-screen">
+        <div class="gradient-circle-blue absolute top-[10%] right-[10%] z-[-10]"></div>
+        <div class="gradient-circle-blue absolute top-[40%] left-[10%] z-[-10]"></div>
+        <img src="./assets/images/wave-illustration-orange.svg" alt="" class="absolute right-0 top-[20%]">
+        <img src="./assets/images/wave-illustration-orange.svg" alt="" class="absolute rotate-180 left-0 top-[60%]">
+        <div class="w-full h-full flex flex-col gap-12 justify-center items-center">
+          <div class="clashdisplay text-gray-900 font-medium text-5xl flex flex-col items-center gap-4">
+           <span> Kein Deutsch,</span>
+           <span>Kein Deutschland</span>
+          </div>
+          <button class="custom-yellow-btn">Download Brochure</button>
+        </div>
       </div>
       
       <footer>
-        <div class="bg-white lg:mx-[7.5rem] lg:my-20">
-            <div class="mb-14">
+        <div class="bg-gray-50 lg:px-[7.5rem] lg:py-20">
+            <div class="pb-14">
                 <img src="./assets/logos/SLS_logo.svg" alt="logo" class="w-56">
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="flex justify-between gap-8">
                 <!-- Description Section -->
-                <div class="col-span-1 border-l-2 pl-10">
-                    <p class="text-gray-700 mb-4">
+                <div class="col-span-1 h-max flex flex-col gap-8 border-[var(--brand-blue)] border-l-2 pl-10">
+                    <p class="text-[#262E2B] mb-4">
                         SLS is the best language learning institute to learn German with the best experience! Join Now!
                     </p>
                     <!-- Social Links -->
                     <div class="flex space-x-4">
                         <a href="#" class="text-orange-500 hover:text-orange-600">
-                            <i class="fab fa-facebook-f"></i>
+                            <img src="assets/images/facebook-link.svg" alt="">
                         </a>
                         <a href="#" class="text-orange-500 hover:text-orange-600">
-                            <i class="fab fa-twitter"></i>
+                          <img src="assets/images/twitter-link.svg" alt="">
                         </a>
                         <a href="#" class="text-orange-500 hover:text-orange-600">
-                            <i class="fab fa-instagram"></i>
+                          <img src="assets/images/instagram-link.svg" alt="">
                         </a>
                         <a href="#" class="text-orange-500 hover:text-orange-600">
-                            <i class="fab fa-linkedin-in"></i>
+                          <img src="assets/images/linkedin-link.svg" alt="">
                         </a>
                     </div>
                 </div>
-    
-                <!-- Company Section -->
-                <div class="col-span-1">
-                    <h3 class="text-gray-900 font-semibold mb-4">COMPANY</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Courses</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Testimonials</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Blogs</a></li>
+                
+                <div class="w-full flex flex-row gap-16 justify-between">
+                  <!-- Company Section -->
+                  <div class="footer-column">
+                    <h3 class="footer-column-heading">COMPANY</h3>
+                    <ul class="footer-column-links">
+                      <li><a href="#" class="footer-column-link">Courses</a></li>
+                      <li><a href="#" class="footer-column-link">Testimonials</a></li>
+                      <li><a href="#" class="footer-column-link">Blogs</a></li>
                     </ul>
-                </div>
-    
-                <!-- About Us Section -->
-                <div class="col-span-1">
-                    <h3 class="text-gray-900 font-semibold mb-4">ABOUT US</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Who we are?</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Founder</a></li>
-                        <li><a href="#" class="text-gray-600 hover:text-orange-500">Privacy Policies</a></li>
+                  </div>
+
+                  <!-- About Us Section -->
+                  <div class="footer-column">
+                    <h3 class="footer-column-heading">ABOUT US</h3>
+                    <ul class="footer-column-links">
+                      <li><a href="#" class="footer-column-link">Who we are?</a></li>
+                      <li><a href="#" class="footer-column-link">Founder</a></li>
+                      <li><a href="#" class="footer-column-link">Privacy Policies</a></li>
                     </ul>
+                  </div>
+      
+                  <div class="footer-column">
+                      <h3 class="footer-column-heading">CONTACT</h3>
+                      <div class="footer-column-links">
+                          <div class="footer-contact-link">
+                              <img src="assets/images/phone-icon.svg" alt="">
+                              <a href="tel:+912020213213">+91 20202 13213</a>
+                          </div>
+                          <div class="footer-contact-link">
+                            <img src="assets/images/mail-icon.svg" alt="">
+                              <a href="mailto:languagelearning@sprachenatelier.in" class="break-all">
+                                  languagelearning@sprachenatelier.in
+                              </a>
+                          </div>
+                      </div>
+                  </div>
                 </div>
+                
     
                 <!-- Contact Section -->
-                <div class="col-span-1">
-                    <h3 class="text-gray-900 font-semibold mb-4">CONTACT</h3>
-                    <div class="space-y-2">
-                        <div class="flex items-center text-gray-600">
-                            <i class="fas fa-phone mr-2 text-orange-500"></i>
-                            <a href="tel:+912020213213">+91 20202 13213</a>
-                        </div>
-                        <div class="flex items-center text-gray-600">
-                            <i class="fas fa-envelope mr-2 text-orange-500"></i>
-                            <a href="mailto:languagelearning@sprachenatelier.in" class="break-all">
-                                languagelearning@sprachenatelier.in
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>

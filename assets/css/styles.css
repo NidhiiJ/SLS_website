@@ -10,6 +10,7 @@
     --brand-orange: #FE9F0F;
     --blue-100: #CFE3FF;
     --blue-900: #002B69;
+    --gray-500: #6B7280;
 }
 
 body{
@@ -44,6 +45,15 @@ body{
     border-radius: 9rem;
     height: max-content;
     padding: 14px 20px
+}
+
+.custom-yellow-outline-btn{
+    color: var(--brand-orange);
+    border: 1px solid var(--brand-orange);
+    font-family: GeneralSans-Semibold;
+    border-radius: 9rem;
+    height: max-content;
+    padding: 14px 20px 
 }
 
 .yellow-link{
@@ -95,9 +105,9 @@ body{
     border-radius: 1rem;
 }
 
-.gradient-circle {
-    width: 600px;
-    height: 600px;
+.gradient-circle-yellow {
+    width: 520px;
+    height: 520px;
     border-radius: 50%;
     background: radial-gradient(
       circle,
@@ -107,7 +117,104 @@ body{
       #ffd999 74%,
       #ffdda2 91%
     );
-    filter: blur(260px); /* Apply layer blur effect */
+    filter: blur(260px); 
   }
 
+  .gradient-circle-blue {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(
+      to bottom,
+      #A4C9FF 8%,
+      #A0C6FD 29%,
+      #95BEFA 47%,
+      #83B1F4 64%,
+      #6B9EEB 81%,
+      #5B93E6 89%
+    );
+    filter: blur(220px); 
+  }
+
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0px 8px 45px 0px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+  }
+
+  .blog-category{
+    color: var(--gray-500);
+    font-size: 0.9rem;
+  }
+
+  .blog-details-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+  };
+
+  .blog-details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .blog-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .blog-description{
+    color: var(--gray-500);
+    font-size: 0.94rem;
+  }
+
+  .blog-title{
+    font-family: GeneralSans-Medium;
+    font-size: 1.2rem;
+  }
+
+  .footer-column {
+    grid-column: span 1 / span 1;
+  }
+  
+  .footer-column-heading {
+    font-family: GeneralSans-Semibold;
+    color: var(--brand-blue);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-column-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .footer-column-link {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-contact-link {
+    font-family: GeneralSans-Medium;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    color: var(--brand-orange);
+    text-decoration: none;
+  }
+  
+  .footer-column-link:hover {
+    color: #ed8936;
+  }
+  
   
