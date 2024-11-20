@@ -1,220 +1,220 @@
-@import url('./clash-display.css');
-@import url('./general-sans.css');
+@import url("./clash-display.css");
+@import url("./general-sans.css");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    --brand-blue: #053F92;
-    --brand-orange: #FE9F0F;
-    --blue-100: #CFE3FF;
-    --blue-900: #002B69;
-    --gray-500: #6B7280;
+:root {
+  --brand-blue: #053f92;
+  --brand-orange: #fe9f0f;
+  --blue-100: #cfe3ff;
+  --blue-900: #002b69;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-800: #1f2937;
 }
 
-body{
-    font-family: GeneralSans-Regular
+body {
+  font-family: GeneralSans-Regular;
 }
 
-.clashdisplay{
-    font-family: ClashDisplay-Variable
+.clashdisplay {
+  font-family: ClashDisplay-Variable;
 }
 
-.generalsans{
-    font-family: GeneralSans-Variable
+.generalsans {
+  font-family: GeneralSans-Variable;
 }
 
-#main-wrapper{
-    overflow-x: hidden
+#main-wrapper {
+  overflow-x: hidden;
 }
 
-.custom-blue-btn{
-    background: linear-gradient(to bottom, #73ACFF 0%, #347DE4 100%);
-    color: white;
-    font-family: GeneralSans-Semibold;
-    border-radius: 9rem;
-    height: max-content;
-    padding: 14px 16px
+.custom-blue-btn {
+  background: linear-gradient(to bottom, #73acff 0%, #347de4 100%);
+  color: white;
+  font-family: GeneralSans-Semibold;
+  border-radius: 9rem;
+  height: max-content;
+  padding: 14px 16px;
 }
 
-.custom-yellow-btn{
-    background: linear-gradient(to bottom, #FFB13A 0%, #D58000 100%);
-    color: white;
-    font-family: GeneralSans-Semibold;
-    border-radius: 9rem;
-    height: max-content;
-    padding: 14px 20px
+.custom-yellow-btn {
+  background: linear-gradient(to bottom, #ffb13a 0%, #d58000 100%);
+  color: white;
+  font-family: GeneralSans-Semibold;
+  border-radius: 9rem;
+  height: max-content;
+  padding: 14px 20px;
 }
 
-.custom-yellow-outline-btn{
-    color: var(--brand-orange);
-    border: 1px solid var(--brand-orange);
-    font-family: GeneralSans-Semibold;
-    border-radius: 9rem;
-    height: max-content;
-    padding: 14px 20px 
+.custom-yellow-outline-btn {
+  color: var(--brand-orange);
+  border: 1px solid var(--brand-orange);
+  font-family: GeneralSans-Semibold;
+  border-radius: 9rem;
+  height: max-content;
+  padding: 14px 20px;
 }
 
-.yellow-link{
-    color: var(--brand-orange);
-    text-decoration: underline;
-    font-family: GeneralSans-Semibold;
-    text-underline-offset: 4px
+.yellow-link {
+  color: var(--brand-orange);
+  text-decoration: underline;
+  font-family: GeneralSans-Semibold;
+  text-underline-offset: 4px;
 }
 
-.metric-box{
-    padding: 2rem;
-    box-sizing: border-box;
-    border: 1px solid var(--blue-100);
-    background: linear-gradient(to bottom, #F9F9F9 0%, #F4FAFF 100%);
-    border-radius: 1rem;
+.metric-box {
+  padding: 2rem;
+  box-sizing: border-box;
+  border: 1px solid var(--blue-100);
+  background: linear-gradient(to bottom, #f9f9f9 0%, #f4faff 100%);
+  border-radius: 1rem;
 }
 
-.metric-heading{
-    font-family: ClashDisplay-Medium;
-    color: var(--brand-blue);
-    font-size: 28px; 
+.metric-heading {
+  font-family: ClashDisplay-Medium;
+  color: var(--brand-blue);
+  font-size: 28px;
 }
 
-.metric-number{
-    font-family: ClashDisplay-SemiBold;
-    color: var(--brand-orange);
-    font-size: 64px; 
+.metric-number {
+  font-family: ClashDisplay-SemiBold;
+  color: var(--brand-orange);
+  font-size: 64px;
 }
 
-.metric-description{
-    font-family: GeneralSans-Regular;
-    color: var(--blue-900);
-    font-size: 1rem; 
+.metric-description {
+  font-family: GeneralSans-Regular;
+  color: var(--blue-900);
+  font-size: 1rem;
 }
 
-.courses-card{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+.courses-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.courses-card-box{
-    height: 100%;
-    padding: 1.5rem;
-    box-sizing: border-box;
-    border: 1px solid var(--blue-100);
-    /* border: 1px solid linear-gradient(to bottom, #FFFFFF 0%, #CFE3FF 100%); */
-    background: linear-gradient(to bottom, #FFFFFF 0%, #F4FAFF 100%);
-    border-radius: 1rem;
+.courses-card-box {
+  height: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border: 1px solid var(--blue-100);
+  /* border: 1px solid linear-gradient(to bottom, #FFFFFF 0%, #CFE3FF 100%); */
+  background: linear-gradient(to bottom, #ffffff 0%, #f4faff 100%);
+  border-radius: 1rem;
 }
 
 .gradient-circle-yellow {
-    width: 520px;
-    height: 520px;
-    border-radius: 50%;
-    background: radial-gradient(
-      circle,
-      #ffbd50 0%,
-      #ffc360 13%,
-      #ffd184 47%,
-      #ffd999 74%,
-      #ffdda2 91%
-    );
-    filter: blur(260px); 
-  }
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    #ffbd50 0%,
+    #ffc360 13%,
+    #ffd184 47%,
+    #ffd999 74%,
+    #ffdda2 91%
+  );
+  filter: blur(260px);
+}
 
-  .gradient-circle-blue {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: linear-gradient(
-      to bottom,
-      #A4C9FF 8%,
-      #A0C6FD 29%,
-      #95BEFA 47%,
-      #83B1F4 64%,
-      #6B9EEB 81%,
-      #5B93E6 89%
-    );
-    filter: blur(220px); 
-  }
+.gradient-circle-blue {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    #a4c9ff 8%,
+    #a0c6fd 29%,
+    #95befa 47%,
+    #83b1f4 64%,
+    #6b9eeb 81%,
+    #5b93e6 89%
+  );
+  filter: blur(220px);
+}
 
-  .blog-card {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    border-radius: 0.75rem;
-    box-shadow: 0px 8px 45px 0px rgba(0, 0, 0, 0.06);
-    overflow: hidden;
-  }
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0px 8px 45px 0px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
 
-  .blog-category{
-    color: var(--gray-500);
-    font-size: 0.9rem;
-  }
+.blog-category {
+  color: var(--gray-500);
+  font-size: 0.9rem;
+}
 
-  .blog-details-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
-  };
+.blog-details-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1.5rem;
+}
 
-  .blog-details-container{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
+.blog-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
-  .blog-details{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+.blog-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
-  .blog-description{
-    color: var(--gray-500);
-    font-size: 0.94rem;
-  }
+.blog-description {
+  color: var(--gray-500);
+  font-size: 0.94rem;
+}
 
-  .blog-title{
-    font-family: GeneralSans-Medium;
-    font-size: 1.2rem;
-  }
+.blog-title {
+  font-family: GeneralSans-Medium;
+  font-size: 1.2rem;
+}
 
-  .footer-column {
-    grid-column: span 1 / span 1;
-  }
-  
-  .footer-column-heading {
-    font-family: GeneralSans-Semibold;
-    color: var(--brand-blue);
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .footer-column-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .footer-column-link {
-    color: #000000;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
+.footer-column {
+  grid-column: span 1 / span 1;
+}
 
-  .footer-contact-link {
-    font-family: GeneralSans-Medium;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    color: var(--brand-orange);
-    text-decoration: none;
-  }
-  
-  .footer-column-link:hover {
-    color: #ed8936;
-  }
-  
-  
+.footer-column-heading {
+  font-family: GeneralSans-Semibold;
+  color: var(--brand-blue);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-column-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-column-link {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-contact-link {
+  font-family: GeneralSans-Medium;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--brand-orange);
+  text-decoration: none;
+}
+
+.footer-column-link:hover {
+  color: #ed8936;
+}
