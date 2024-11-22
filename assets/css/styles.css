@@ -218,3 +218,51 @@ body {
 .footer-column-link:hover {
   color: #ed8936;
 }
+
+.admission-consultancy-wrapper {
+  background:linear-gradient(
+    to top right, 
+    #FFBD50 0%, 
+    #FFC360 13%, 
+    #FFD184 47%, 
+    #FFD999 74%, 
+    #FFDDA2 91%
+  );
+}
+
+.admission-consultancy{
+  width:100%;
+  height:100%;
+  background:linear-gradient(
+    to bottom, 
+    #FFFAF3 0%, 
+    #FFF6E8 100%
+  );
+}
+
+.blue-gradient-tag{
+  width: max-content;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  padding: 0.4rem 0.6rem;
+  color:var(--brand-blue);
+  font-family: GeneralSans-SemiBold;
+  letter-spacing: 0.1rem;
+  font-size: 0.8rem;
+  background: #A4C9FF
+}
+
+.consultancy-title{
+  font-family: ClashDisplay-Medium;
+  font-size: 1.9rem;
+}
+
+.counsultancy-details{
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  align-items: start;
+  justify-content: center;
+}
