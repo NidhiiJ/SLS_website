@@ -8,11 +8,13 @@
 :root {
   --brand-blue: #053f92;
   --brand-orange: #fe9f0f;
+  --brand-orange-secondary: #FFEDCE;
   --blue-100: #cfe3ff;
   --blue-900: #002b69;
   --gray-500: #6b7280;
   --gray-600: #4b5563;
   --gray-800: #1f2937;
+  --gray-900: #161818;
 }
 
 body {
