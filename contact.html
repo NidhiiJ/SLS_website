@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/css/stylesoutput.css" rel="stylesheet" />
+    <title>SLS-Sprachenatelier Language Studio</title>
+  </head>
+  <body>
+    <div id="course-detail-wrapper">
+      <header class="relative z-50">
+        <nav
+          class="font-medium text-[#282828] inset-x-[7.5rem] fixed flex gap-6 lg:gap-12 justify-between items-center border-[1px] border-[#A4C9FF] backdrop-blur-xl bg-white/60 rounded-[6rem] p-2 pl-8 mt-6"
+        >
+          <a href="/" class="">
+            <img src="./assets/logos/SLS_logo.svg" alt="logo" class="md:w-56" />
+          </a>
+          <ul class="hidden md:flex w-full gap-12 justify-end items-center">
+            <li><a href="/">Home</a></li>
+            <li>
+              <a href="/about.html">About Us</a>
+            </li>
+            <li><a href="/courses.html">Courses</a></li>
+            <li><a href="/blogs.html">Blogs</a></li>
+            <li>
+              <button class="custom-blue-btn">
+                <a href="/contact.html">Contact Us</a>
+              </button>
+            </li>
+          </ul>
+          <button
+            id="menu-btn"
+            class="md:hidden text-gray-700 focus:outline-none"
+          >
+            <svg
+              class="w-6 h-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </nav>
+      </header>
+
+      <div id="course-heading" class="mx-[7.5rem] pt-40">
+        <div class="breadcrumb">
+          <nav class="flex" aria-label="Breadcrumb">
+            <ol
+              class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse"
+            >
+              <li class="inline-flex items-center">
+                <a
+                  href="/"
+                  class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white"
+                >
+                  Home
+                </a>
+              </li>
+              <li aria-current="page">
+                <div class="flex items-center">
+                  /
+                  <span
+                    class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400"
+                    >Contact Us</span
+                  >
+                </div>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+
+      <div class="flex gap-12 mx-[7.5rem] pt-10">
+        <div class="flex flex-col gap-8 md:w-[40vw] text-[var(--gray-900)]">
+          <h1 class="font-medium text-4xl clashdisplay">Contact Us</h1>
+          <div class="flex flex-col gap-4">
+            <p class="text-2xl generalsans font-medium">
+              Come and say hello to us at
+            </p>
+            <div>
+              <p>Sprachenatelier Language Studio</p>
+              <p>
+                CMA 501, Golden Blossom, Whitefields, Kadugodi, Bangalore East
+                560067.
+              </p>
+            </div>
+            <div>
+              <p>Our Timings:</p>
+              <p>Mon-Fri: 10:00 am - 06:00 pm</p>
+              <p>Sat: 9:30 am - 6:30 pm</p>
+              <p>Sun: Closed</p>
+            </div>
+            <div>
+              <p>Write to us here:</p>
+              <p class="text-[var(--brand-blue)] generalsans font-medium">languagelearning@sprachenatelier.in</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses-card-box" style="height: max-content">
+          <div class="flex flex-col gap-2 items-start">
+            <span
+              class="clashdisplay font-medium text-[var(--gray-900)] text-[24px]"
+            >
+              Contact Details
+            </span>
+            <form id="contact-form" class="generalsans font-medium leading-10">
+              <span>Hello, I am</span>
+              <input name="name" type="text" placeholder="Your name" class="outline-none border-none bg-transparent w-[20vw] border-0 border-b-2 border-[var(--gray-300)]" /> 
+              <br>
+              <span>my contact</span>
+              <input name="email" type="text" placeholder="your email"  class="bg-transparent w-[20vw] border-0 border-b-2 border-[var(--gray-300)]" /> 
+              <span>&</span>
+              <input name="number" type="text" placeholder="your number"  class="bg-transparent w-[20vw] border-0 border-b-2 border-[var(--gray-300)]" /> 
+              <br>
+              <span>I am keen to start learning German with</span>
+              <select name="course-name" id="courses"  class="bg-transparent w-[20vw] border-0 border-b-2 border-[var(--gray-300)]">
+                <option value="TestDaF Examination">TestDaF Examination</option>
+                <option value="DSH Examination">DSH Examination</option>
+                <option value="Telc Examination">Telc Examination</option>
+                <option value="Ab Initio, SL and HL German Examination of IB">
+                  Ab Initio, SL and HL German Examination of IB
+                </option>
+                <option value="Deutsch-Test für Zuwanderer (DTZ)">
+                  Deutsch-Test für Zuwanderer (DTZ)
+                </option>
+                <option value="Intercultural Communication Training">
+                  Intercultural Communication Training
+                </option>
+              </select>
+              <br>
+              <span> We love hearing from you, feel free to drop your questions and messages</span>
+              <textarea
+                name="enquiry-message"
+                placeholder="Here"
+                id="message"
+                class="bg-transparent w-full border-0 border-b-2 border-[var(--gray-300)]"
+              ></textarea>
+            </form>
+            <button type="submit" class="custom-yellow-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- map -->
+      <div class="mx-[7.5rem] mt-20 h-full rounded-2xl overflow-clip">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6106847625106!2d77.61176327484071!3d12.93272528737909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11bcf72ae193%3A0x4a8418c28db5eadf!2sTeamLease%20Digital%20Private%20Ltd.!5e0!3m2!1sen!2sin!4v1732829057778!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Brochure section -->
+      <div id="downloadbrochure-section" class="relative h-screen max-w-screen">
+        <div
+          class="gradient-circle-blue absolute top-[10%] right-[10%] z-[-10]"
+        ></div>
+        <div
+          class="gradient-circle-blue absolute top-[40%] left-[10%] z-[-10]"
+        ></div>
+        <img
+          src="./assets/images/wave-illustration-orange.svg"
+          alt=""
+          class="absolute right-0 top-[20%]"
+        />
+        <img
+          src="./assets/images/wave-illustration-orange.svg"
+          alt=""
+          class="absolute rotate-180 left-0 top-[60%]"
+        />
+        <div
+          class="w-full h-full flex flex-col gap-12 justify-center items-center"
+        >
+          <div
+            class="clashdisplay text-gray-900 font-medium text-5xl flex flex-col items-center gap-4"
+          >
+            <span> Kein Deutsch,</span>
+            <span>Kein Deutschland</span>
+          </div>
+          <button class="custom-yellow-btn">Download Brochure</button>
+        </div>
+      </div>
+
+      <footer>
+        <div class="bg-gray-50 lg:px-[7.5rem] lg:py-20">
+          <div class="pb-14">
+            <img src="./assets/logos/SLS_logo.svg" alt="logo" class="w-56" />
+          </div>
+          <div class="flex justify-between gap-8">
+            <!-- Description Section -->
+            <div
+              class="col-span-1 h-max flex flex-col gap-8 border-[var(--brand-blue)] border-l-2 pl-10"
+            >
+              <p class="text-[#262E2B] mb-4">
+                SLS is the best language learning institute to learn German with
+                the best experience! Join Now!
+              </p>
+              <!-- Social Links -->
+              <div class="flex space-x-4">
+                <a href="#" class="text-orange-500 hover:text-orange-600">
+                  <img src="assets/images/facebook-link.svg" alt="" />
+                </a>
+                <a href="#" class="text-orange-500 hover:text-orange-600">
+                  <img src="assets/images/twitter-link.svg" alt="" />
+                </a>
+                <a href="#" class="text-orange-500 hover:text-orange-600">
+                  <img src="assets/images/instagram-link.svg" alt="" />
+                </a>
+                <a href="#" class="text-orange-500 hover:text-orange-600">
+                  <img src="assets/images/linkedin-link.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="w-full flex flex-row gap-16 justify-between">
+              <!-- Company Section -->
+              <div class="footer-column">
+                <h3 class="footer-column-heading">COMPANY</h3>
+                <ul class="footer-column-links">
+                  <li><a href="#" class="footer-column-link">Courses</a></li>
+                  <li>
+                    <a href="#" class="footer-column-link">Testimonials</a>
+                  </li>
+                  <li><a href="#" class="footer-column-link">Blogs</a></li>
+                </ul>
+              </div>
+
+              <!-- About Us Section -->
+              <div class="footer-column">
+                <h3 class="footer-column-heading">ABOUT US</h3>
+                <ul class="footer-column-links">
+                  <li>
+                    <a href="#" class="footer-column-link">Who we are?</a>
+                  </li>
+                  <li><a href="#" class="footer-column-link">Founder</a></li>
+                  <li>
+                    <a href="#" class="footer-column-link">Privacy Policies</a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Contact Section -->
+              <div class="footer-column">
+                <h3 class="footer-column-heading">CONTACT</h3>
+                <div class="footer-column-links">
+                  <div class="footer-contact-link">
+                    <img src="assets/images/phone-icon.svg" alt="" />
+                    <a href="tel:+912020213213">+91 20202 13213</a>
+                  </div>
+                  <div class="footer-contact-link">
+                    <img src="assets/images/mail-icon.svg" alt="" />
+                    <a
+                      href="mailto:languagelearning@sprachenatelier.in"
+                      class="break-all"
+                    >
+                      languagelearning@sprachenatelier.in
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>
