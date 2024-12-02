@@ -19,7 +19,7 @@ window.addEventListener("load", () => {
   // const HOME_URL = "http://127.0.0.1:5500/";
   // if (window.location.href === HOME_URL)
 
-  // -----------------------------------------------------------------------------
+  // Open modal after 10 seconds
   setTimeout(() => {
     MicroModal.show("modal-1");
   }, 10000);
