@@ -4,18 +4,127 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./assets/css/stylesoutput.css" rel="stylesheet" />
+    <link href="./assets/css/modalstyles.css" rel="stylesheet" />
     <title>SLS-Sprachenatelier Language Studio</title>
   </head>
   <body>
     <div id="about-wrapper">
-      <header class="relative z-50">
+      <!-- Modal markup -->
+      <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div
+            class="modal__container"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modal-1-title"
+          >
+            <header class="modal__header">
+              <h2
+                class="clashdisplay text-2xl sm:text-[32px] leading-[39px] text-[var(--gray-900)] font-medium"
+                id="modal-1-title"
+              >
+                Brochure Download
+              </h2>
+              <button aria-label="Close modal" data-micromodal-close>
+                <img
+                  src="./assets/images/close-x-vector.svg"
+                  alt="Close modal"
+                />
+              </button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+              <form action="">
+                <div class="space-y-4 w-full mb-10">
+                  <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
+                    <div class="flex-grow">
+                      <label
+                        for="firstname"
+                        class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
+                        >First name</label
+                      >
+                      <input
+                        type="text"
+                        name="firstname"
+                        id="firstname"
+                        placeholder="Enter first name"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
+                      />
+                    </div>
+                    <div class="flex-grow">
+                      <label
+                        for="lastname"
+                        class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
+                        >Last name</label
+                      >
+                      <input
+                        name="lastname"
+                        id="lastname"
+                        type="text"
+                        placeholder="Enter last name"
+                        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
+                      />
+                    </div>
+                  </div>
+                  <div class="w-full">
+                    <label
+                      for="email"
+                      class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
+                      >Email</label
+                    >
+                    <input
+                      name="email"
+                      id="email"
+                      type="email"
+                      placeholder="Enter email"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
+                    />
+                  </div>
+                  <div class="w-full">
+                    <label
+                      for="contact"
+                      class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
+                      >Contact number</label
+                    >
+                    <input
+                      name="contact"
+                      id="contact"
+                      type="text"
+                      value="+91"
+                      class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="custom-yellow-btn custom-btn-animation"
+                  data-text="Download"
+                >
+                  Download
+                </button>
+              </form>
+            </main>
+            <!-- <footer class="modal__footer">
+            <button class="modal__btn modal__btn-primary">Continue</button>
+            <button
+              class="modal__btn"
+              data-micromodal-close
+              aria-label="Close this dialog window"
+            >
+              Close
+            </button>
+          </footer> -->
+          </div>
+        </div>
+      </div>
+
+      <header class="relative z-20">
         <nav
-          class="font-medium text-[#282828] inset-x-[7.5rem] fixed flex gap-6 lg:gap-12 justify-between items-center border-[1px] border-[#A4C9FF] backdrop-blur-xl bg-white/60 rounded-[6rem] p-2 pl-8 mt-6"
+          class="font-medium text-[#282828] inset-x-5 sm:inset-x-14 lg:inset-x-[7.5rem] fixed flex gap-6 lg:gap-12 justify-between items-center border-[1px] border-[#A4C9FF] backdrop-blur-xl bg-white/60 rounded-[6rem] p-2 pl-8 mt-6"
         >
           <a href="/" class="">
             <img src="./assets/logos/SLS_logo.svg" alt="logo" class="md:w-56" />
           </a>
-          <ul class="hidden md:flex w-full gap-12 justify-end items-center">
+
+          <ul class="hidden lg:flex w-full gap-12 justify-end items-center">
             <li><a href="/">Home</a></li>
             <li>
               <a href="/about.html" class="font-semibold text-[#FE9F0F]"
@@ -25,12 +134,18 @@
             <li><a href="/courses.html">Courses</a></li>
             <li><a href="/blogs.html">Blogs</a></li>
             <li>
-              <button class="custom-blue-btn"><a href="/contact.html">Contact Us</a></button>
+              <button
+                class="custom-blue-btn custom-btn-animation"
+                data-text="Contact Us"
+              >
+                <a href="/contact.html">Contact Us</a>
+              </button>
             </li>
           </ul>
+
           <button
             id="menu-btn"
-            class="md:hidden text-gray-700 focus:outline-none"
+            class="lg:hidden text-gray-700 focus:outline-none mr-4"
           >
             <svg
               class="w-6 h-6"
@@ -50,7 +165,43 @@
         </nav>
       </header>
 
-      <div id="about-heading" class="mx-[7.5rem] pt-40">
+      <!-- Mobile nav menu -->
+      <ul
+        class="fixed top-0 left-0 flex flex-col lg:hidden w-full h-full gap-12 md:gap-6 justify-center items-center bg-white z-50 mobile-nav"
+      >
+        <button>
+          <img
+            src="./assets/images/close-x-vector.svg"
+            alt="Close menu"
+            id="close-menu-btn"
+            class="w-8 absolute right-5 top-5"
+          />
+        </button>
+        <a href="/" class="">
+          <img src="./assets/logos/SLS_logo.svg" alt="logo" class="md:w-56" />
+        </a>
+        <li><a href="/">Home</a></li>
+        <li>
+          <a href="/about.html" class="font-semibold text-[#FE9F0F]"
+            >About Us</a
+          >
+        </li>
+        <li><a href="/courses.html">Courses</a></li>
+        <li><a href="/blogs.html">Blogs</a></li>
+        <li>
+          <button
+            class="custom-blue-btn custom-btn-animation"
+            data-text="Contact Us"
+          >
+            <a href="/contact.html">Contact Us</a>
+          </button>
+        </li>
+      </ul>
+
+      <div
+        id="about-heading"
+        class="mx-5 sm:mx-14 lg:mx-[7.5rem] pt-24 sm:pt-40"
+      >
         <div class="breadcrumb">
           <nav class="flex" aria-label="Breadcrumb">
             <ol
@@ -77,7 +228,7 @@
           </nav>
         </div>
         <h2
-          class="text-[46px] lg:text-[56px] shrink-0 clashdisplay font-medium"
+          class="text-2xl sm:text-[46px] lg:text-[56px] shrink-0 clashdisplay font-medium mt-3"
         >
           About Us
         </h2>
@@ -85,22 +236,23 @@
 
       <div
         id="about-the-institute"
-        class="mx-[7.5rem] mt-14 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center"
+        class="mx-5 sm:mx-14 lg:mx-[7.5rem] mt-6 sm:mt-14 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-14 items-center"
       >
-        <div class="rounded-2xl overflow-hidden">
+        <div class="rounded-2xl w-full h-full overflow-hidden">
+          <!-- <div class="rounded-2xl overflow-hidden"> -->
           <img
             src="./assets/images/about-1.jpg"
             alt=""
             class="object-cover h-full w-full"
           />
         </div>
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-2 sm:gap-6">
           <h2
             class="text-xl md:text-3xl lg:text-5xl clashdisplay font-medium text-[var(--brand-blue)]"
           >
             About The Institute
           </h2>
-          <p class="text-base leading-[26px] text-[var(--gray-600)]">
+          <p class="text-xs lg:text-base leading-[26px] text-[var(--gray-600)]">
             Sprachenatelier offers a superior learning experience led by highly
             qualified personnel. Our staff excels in teaching German to various
             age groups and specializes in DaF and Education Science. For us
@@ -116,51 +268,79 @@
 
       <div
         id="metrics-section"
-        class="grid grid-cols-2 md:grid-cols-4 gap-6 mx-[7.5rem] mt-12"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mx-5 sm:mx-14 lg:mx-[7.5rem] mt-10 sm:mt-12"
       >
-        <div class="metric-box flex flex-col items-center">
+        <div
+          class="metric-box max-sm:!px-8 max-sm:!py-5 flex flex-row sm:flex-col items-center max-sm:justify-center max-sm:gap-8"
+        >
           <div>
             <img src="./assets/images/aboutus-metric-1.svg" alt="" />
           </div>
-          <div class="metric-number" style="font-size: 1.8rem">29.3K</div>
-          <div class="metric-heading tracking-wider" style="font-size: 0.9rem">
-            STUDNETS ENROLLED
+          <div class="flex flex-col items-start sm:items-center">
+            <div class="metric-number" style="font-size: 1.8rem">29.3K</div>
+            <div
+              class="metric-heading tracking-wider"
+              style="font-size: 0.9rem"
+            >
+              STUDNETS ENROLLED
+            </div>
           </div>
         </div>
-        <div class="metric-box flex flex-col items-center">
+        <div
+          class="metric-box max-sm:!px-8 max-sm:!py-5 flex flex-row sm:flex-col items-center max-sm:justify-center max-sm:gap-8"
+        >
           <div>
             <img src="./assets/images/aboutus-metric-2.svg" alt="" />
           </div>
-          <div class="metric-number" style="font-size: 1.8rem">9+</div>
-          <div class="metric-heading tracking-wider" style="font-size: 0.9rem">
-            YEARS OF EXPERIENCE
+          <div class="flex flex-col items-start sm:items-center">
+            <div class="metric-number" style="font-size: 1.8rem">9+</div>
+            <div
+              class="metric-heading tracking-wider"
+              style="font-size: 0.9rem"
+            >
+              YEARS OF EXPERIENCE
+            </div>
           </div>
         </div>
-        <div class="metric-box flex flex-col items-center">
+        <div
+          class="metric-box max-sm:!px-8 max-sm:!py-5 flex flex-row sm:flex-col items-center max-sm:justify-center max-sm:gap-8"
+        >
           <div>
             <img src="./assets/images/aboutus-metric-3.svg" alt="" />
           </div>
-          <div class="metric-number" style="font-size: 1.8rem">100%</div>
-          <div class="metric-heading tracking-wider" style="font-size: 0.9rem">
-            SATISFACTION RATE
+          <div class="flex flex-col items-start sm:items-center">
+            <div class="metric-number" style="font-size: 1.8rem">100%</div>
+            <div
+              class="metric-heading tracking-wider"
+              style="font-size: 0.9rem"
+            >
+              SATISFACTION RATE
+            </div>
           </div>
         </div>
-        <div class="metric-box flex flex-col items-center">
+        <div
+          class="metric-box max-sm:!px-8 max-sm:!py-5 flex flex-row sm:flex-col items-center max-sm:justify-center max-sm:gap-8"
+        >
           <div>
             <img src="./assets/images/aboutus-metric-4.svg" alt="" />
           </div>
-          <div class="metric-number" style="font-size: 1.8rem">172</div>
-          <div class="metric-heading tracking-wider" style="font-size: 0.9rem">
-            SUCCESS STORIES
+          <div class="flex flex-col items-start sm:items-center">
+            <div class="metric-number" style="font-size: 1.8rem">172</div>
+            <div
+              class="metric-heading tracking-wider"
+              style="font-size: 0.9rem"
+            >
+              SUCCESS STORIES
+            </div>
           </div>
         </div>
       </div>
 
       <div
         id="about-the-founder"
-        class="mx-[7.5rem] mt-14 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-14 items-center"
+        class="mx-5 sm:mx-14 lg:mx-[7.5rem] mt-6 sm:mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-14 items-center"
       >
-        <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-6 max-lg:row-start-2">
           <h2
             class="text-xl md:text-3xl lg:text-5xl clashdisplay font-medium text-[var(--brand-blue)]"
           >
@@ -171,19 +351,26 @@
             <div class="text-base leading-[26px] flex flex-col gap-3">
               <div class="text-[var(--gray-800)] text-lg">
                 <span class="font-semibold">Frau Ujwal Anil</span>
-                <span class="font-[500]"> has an extensive academic background in</span>
+                <span class="font-[500]">
+                  has an extensive academic background in</span
+                >
               </div>
               <ul class="list-disc text-[var(--gray-600)] pl-6">
-                <li>Postgraduate research studies in Psycholinguistic Studies</li>
-                <li>GDS - das große Deutsche Sprachdiplom Lehrer Ausbildung - Ludwig</li>
+                <li>
+                  Postgraduate research studies in Psycholinguistic Studies
+                </li>
+                <li>
+                  GDS - das große Deutsche Sprachdiplom Lehrer Ausbildung -
+                  Ludwig
+                </li>
                 <li>Maximilian Universität Education consultant</li>
               </ul>
             </div>
             <p class="text-base leading-[26px] text-[var(--gray-600)]">
               Trained by the TestDaF Institut Germany, she has helped students
               achieve meritorious results for the past 13 years. Most of the SLS
-              students are global toppers, who have achieved the highest 20/20 in
-              the TestDaf examination. As an expert TestDaF Trainer, German
+              students are global toppers, who have achieved the highest 20/20
+              in the TestDaf examination. As an expert TestDaF Trainer, German
               Language Teacher for AB Initio programme (IBDP) and Telc language
               studies trainer she believes in “Language is the gateway to global
               opportunities for students” and thus she promotes German language
@@ -191,7 +378,9 @@
             </p>
           </div>
         </div>
-        <div class="rounded-2xl overflow-hidden flex flex-col">
+        <div
+          class="rounded-2xl overflow-hidden flex flex-col max-lg:row-start-1"
+        >
           <img
             src="./assets/images/founder.jpg"
             alt=""
@@ -201,45 +390,54 @@
       </div>
 
       <!-- Brochure section -->
-      <div id="downloadbrochure-section" class="relative h-screen max-w-screen">
+      <div id="downloadbrochure-section" class="relative h-screen w-screen">
         <div
           class="gradient-circle-blue absolute top-[10%] right-[10%] z-[-10]"
         ></div>
         <div
-          class="gradient-circle-blue absolute top-[40%] left-[10%] z-[-10]"
+          class="max-sm:hidden gradient-circle-blue absolute top-[40%] left-[10%] z-[-10]"
         ></div>
         <img
           src="./assets/images/wave-illustration-orange.svg"
           alt=""
-          class="absolute right-0 top-[20%]"
+          class="absolute right-0 top-[20%] max-sm:translate-x-1/3"
         />
         <img
           src="./assets/images/wave-illustration-orange.svg"
           alt=""
-          class="absolute rotate-180 left-0 top-[60%]"
+          class="absolute rotate-180 left-0 top-[60%] max-sm:-translate-x-1/3"
         />
         <div
           class="w-full h-full flex flex-col gap-12 justify-center items-center"
         >
           <div
-            class="clashdisplay text-gray-900 font-medium text-5xl flex flex-col items-center gap-4"
+            class="clashdisplay text-gray-900 font-medium text-[32px] sm:text-5xl flex flex-col items-center gap-1 sm:gap-4"
           >
             <span> Kein Deutsch,</span>
             <span>Kein Deutschland</span>
           </div>
-          <button class="custom-yellow-btn">Download Brochure</button>
+          <button
+            class="custom-yellow-btn custom-btn-animation"
+            data-text="Download Brochure"
+            data-micromodal-trigger="modal-1"
+          >
+            Download Brochure
+          </button>
         </div>
       </div>
 
       <footer>
-        <div class="bg-gray-50 lg:px-[7.5rem] lg:py-20">
+        <div class="bg-gray-50 px-5 py-10 sm:p-20 lg:px-[7.5rem] lg:py-20">
           <div class="pb-14">
             <img src="./assets/logos/SLS_logo.svg" alt="logo" class="w-56" />
           </div>
-          <div class="flex justify-between gap-8">
+
+          <div
+            class="flex flex-col lg:flex-row justify-between gap-14 lg:gap-8"
+          >
             <!-- Description Section -->
             <div
-              class="col-span-1 h-max flex flex-col gap-8 border-[var(--brand-blue)] border-l-2 pl-10"
+              class="col-span-1 h-max max-lg:max-w-md flex flex-col gap-8 border-[var(--brand-blue)] border-l-2 pl-10"
             >
               <p class="text-[#262E2B] mb-4">
                 SLS is the best language learning institute to learn German with
@@ -262,7 +460,9 @@
               </div>
             </div>
 
-            <div class="w-full flex flex-row gap-16 justify-between">
+            <div
+              class="w-full flex flex-col sm:flex-row gap-10 sm:gap-6 lg:gap-16 justify-between"
+            >
               <!-- Company Section -->
               <div class="footer-column">
                 <h3 class="footer-column-heading">COMPANY</h3>
@@ -314,5 +514,7 @@
       </footer>
     </div>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
