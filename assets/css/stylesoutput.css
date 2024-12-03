@@ -1786,6 +1786,14 @@ input:checked + .toggle-bg {
   height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -2419,6 +2427,11 @@ input:checked + .toggle-bg {
   padding-bottom: 5rem;
 }
 
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -2431,10 +2444,6 @@ input:checked + .toggle-bg {
 
 .pb-14 {
   padding-bottom: 3.5rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
 }
 
 .pb-24 {
@@ -3766,12 +3775,16 @@ body {
     padding-bottom: 4rem;
   }
 
-  .sm\:pb-0 {
-    padding-bottom: 0px;
+  .sm\:pb-8 {
+    padding-bottom: 2rem;
   }
 
   .sm\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .sm\:pt-28 {
+    padding-top: 7rem;
   }
 
   .sm\:pt-40 {
