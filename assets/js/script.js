@@ -14,12 +14,6 @@ closeMenuBtn.addEventListener("click", () => {
 MicroModal.init();
 
 window.addEventListener("load", () => {
-  // IF YOU ONLY WANT TO MAKE MODAL VISIBLE ON HOME PAGE
-  // // CHANGE THIS URL TO THE ACTURAL HOME PAGE URL
-  // const HOME_URL = "http://127.0.0.1:5500/";
-  // if (window.location.href === HOME_URL)
-
-  // Open modal after 10 seconds
   setTimeout(() => {
     MicroModal.show("modal-1");
   }, 10000);
