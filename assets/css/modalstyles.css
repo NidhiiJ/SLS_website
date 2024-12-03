@@ -14,9 +14,13 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.modal__container__wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal__container {
@@ -27,13 +31,22 @@
   border-radius: 4px;
   overflow-y: auto;
   box-sizing: border-box;
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
 }
 
 @media (max-width: 640px) {
+  .modal__container__wrapper {
+    width: 100%;
+    padding: 0 24px;
+  }
+
   .modal__container {
     width: 100%;
     padding: 16px;
-    margin: 0 24px;
+
     border-radius: 1rem;
   }
 }

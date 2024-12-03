@@ -11,10 +11,14 @@ closeMenuBtn.addEventListener("click", () => {
 });
 
 // micromodal.js module - added throught cdn
-MicroModal.init();
+MicroModal.init({
+  disableFocus: true,
+});
 
 window.addEventListener("load", () => {
   setTimeout(() => {
-    MicroModal.show("modal-1");
+    MicroModal.show("modal-1", {
+      disableFocus: true,
+    });
   }, 10000);
 });
