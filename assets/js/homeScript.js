@@ -1,9 +1,9 @@
 // @glidejs/glide module - added throught cdn
-new Glide(".glide", {
-  autoplay: 4000,
-  hoverpause: true,
-  type: "carousel",
-}).mount();
+// new Glide(".glide", {
+//   autoplay: 4000,
+//   hoverpause: true,
+//   type: "carousel",
+// }).mount();
 
 const homeTranslateBtn = document.querySelector(".home-hero-translate-btn");
 let isHeadingGerman = true;
