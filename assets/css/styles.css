@@ -526,6 +526,24 @@ body {
   animation: blog-btn 0.4s ease-out;
 }
 
+@media (max-width: 1024px) {
+  .blog-card img {
+    transform: scale(1);
+  }
+
+  .blog-card .blog-details-wrapper {
+    transform: translateY(0);
+  }
+
+  .blog-card .custom-yellow-btn {
+    visibility: visible;
+    pointer-events: all;
+    opacity: 1;
+    transform: translateY(0);
+    animation: blog-btn 0.4s ease-out;
+  }
+}
+
 .footer-column {
   grid-column: span 1 / span 1;
 }
