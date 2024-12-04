@@ -514,8 +514,6 @@ body {
   opacity: 0;
   transform: translateY(calc(100% + 1.5rem));
   transition: all 0.5s ease-out;
-  /* position: absolute;
-  bottom: 1.5rem; */
 }
 
 .blog-card:hover .custom-yellow-btn {
