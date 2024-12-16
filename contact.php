@@ -1,3 +1,48 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Storing input in session variables
+    // change to your fields
+    $_SESSION['name'] = $_POST['name'];
+    $_SESSION['number'] = $_POST['number'];
+    $_SESSION['email'] = $_POST['email'];
+    $_SESSION['course-name'] = $_POST['course-name'];
+
+    // Retrieving data
+    $name = htmlspecialchars($_SESSION['name']);
+    $number = htmlspecialchars($_SESSION['number']);
+    $email = htmlspecialchars($_SESSION['email']);
+    $courseName = htmlspecialchars($_SESSION['course-name']);
+
+    // Email details
+    $subject = 'Inquiry via Website';
+    $to = "nidhi.flayk@gmail.com";
+    $headers = "From: Attorneys & Associates <nidhi.flayk@gmail.com>\r\n";
+    // $headers .= "Reply-To: $cphone\r\n";
+    $headers .= "CC: penikalaryan9@gmail.com\r\n";
+    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+    // Email body
+    $txt = "Dear Team,\n\nYou have received a new booking inquiry via the landing page. The details are as follows:\n\n" .
+           "Name: $name\n" .
+           "Phone: $phone\n" .
+           "Email: $email\n" .
+           "Message: $message\n\n";
+
+    // Send email
+    if (mail($to, $subject, $txt, $headers)) {
+        echo "<script>
+                alert('Thank You! Our team will reach out to you shortly.');
+                window.location.replace('https://attorneysassociates.com');
+              </script>";
+    } else {
+        echo "<script>
+                alert('Oops! An unexpected error occurred. Failed to send Email.');
+              </script>";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -267,7 +312,7 @@
             >
               Contact Details
             </span>
-            <form id="contact-form" class="generalsans font-medium leading-10">
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="contact-form" class="generalsans font-medium leading-10">
               <span>Hello, I am</span>
               <input
                 name="name"
@@ -321,14 +366,14 @@
                 id="message"
                 class="bg-transparent w-full border-0 border-b-2 border-[var(--gray-300)]"
               ></textarea>
+              <button
+                type="submit"
+                class="custom-yellow-btn custom-btn-animation"
+                data-text="Submit"
+              >
+                Submit
+              </button>
             </form>
-            <button
-              type="submit"
-              class="custom-yellow-btn custom-btn-animation"
-              data-text="Submit"
-            >
-              Submit
-            </button>
           </div>
         </div>
       </div>
