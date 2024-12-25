@@ -182,7 +182,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 class="custom-blue-btn custom-btn-animation"
                 data-text="Contact Us"
               >
-                <a href="/SLS_website/contact">Contact Us</a>
+                <a href="/SLS_website/contact.php">Contact Us</a>
               </button>
             </li>
           </ul>
@@ -233,7 +233,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             class="custom-blue-btn custom-btn-animation"
             data-text="Contact Us"
           >
-            <a href="/SLS_website/contact">Contact Us</a>
+            <a href="/SLS_website/contact.php">Contact Us</a>
           </button>
         </li>
       </ul>
