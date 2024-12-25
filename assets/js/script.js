@@ -11,14 +11,22 @@ closeMenuBtn.addEventListener("click", () => {
 });
 
 // micromodal.js module - added throught cdn
+// Initialize MicroModal
 MicroModal.init({
   disableFocus: true,
 });
 
-window.addEventListener("load", () => {
-  setTimeout(() => {
-    MicroModal.show("modal-1", {
-      disableFocus: true,
-    });
-  }, 10000);
-});
+// Check if the modal has already been shown in the current session
+if (!sessionStorage.getItem("modalShown")) {
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      // Show the modal after 4 seconds
+      MicroModal.show("modal-1", {
+        disableFocus: true,
+      });
+
+      // Set a flag in sessionStorage to indicate the modal has been shown
+      sessionStorage.setItem("modalShown", "true");
+    }, 4000); // 4000 milliseconds = 4 seconds
+  });
+}
