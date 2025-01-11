@@ -11,12 +11,10 @@ closeMenuBtn.addEventListener("click", () => {
 });
 
 // micromodal.js module - added throught cdn
-// Initialize MicroModal
 MicroModal.init({
   disableFocus: true,
 });
 
-// Check if the modal has already been shown in the current session
 if (!sessionStorage.getItem("modalShown")) {
   window.addEventListener("load", () => {
     setTimeout(() => {

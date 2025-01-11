@@ -17,204 +17,26 @@
   </head>
   <body>
     <div id="main-wrapper">
-      <!-- Modal markup -->
-      <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
-        <div class="modal__overlay" tabindex="-1" data-micromodal-close></div>
-        <div class="modal__container__wrapper">
-          <div
-            class="modal__container"
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="modal-1-title"
-          >
-            <header class="modal__header">
-              <h2
-                class="clashdisplay text-2xl sm:text-[32px] leading-[39px] text-[var(--gray-900)] font-medium"
-                id="modal-1-title"
-              >
-                Brochure Download
-              </h2>
-              <button aria-label="Close modal" data-micromodal-close>
-                <img
-                  src="./assets/images/close-x-vector.svg"
-                  alt="Close modal"
-                />
-              </button>
-            </header>
-            <main class="modal__content" id="modal-1-content">
-              <form action="">
-                <div class="space-y-4 w-full mb-10">
-                  <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
-                    <div class="flex-grow">
-                      <label
-                        for="firstname"
-                        class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
-                        >First name</label
-                      >
-                      <input
-                        type="text"
-                        name="firstname"
-                        id="firstname"
-                        placeholder="Enter first name"
-                        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
-                      />
-                    </div>
-                    <div class="flex-grow">
-                      <label
-                        for="lastname"
-                        class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
-                        >Last name</label
-                      >
-                      <input
-                        name="lastname"
-                        id="lastname"
-                        type="text"
-                        placeholder="Enter last name"
-                        class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
-                      />
-                    </div>
-                  </div>
-                  <div class="w-full">
-                    <label
-                      for="email"
-                      class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
-                      >Email</label
-                    >
-                    <input
-                      name="email"
-                      id="email"
-                      type="email"
-                      placeholder="Enter email"
-                      class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
-                    />
-                  </div>
-                  <div class="w-full">
-                    <label
-                      for="contact"
-                      class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
-                      >Contact number</label
-                    >
-                    <input
-                      name="contact"
-                      id="contact"
-                      type="text"
-                      value="+91"
-                      class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
-                    />
-                  </div>
-                </div>
-                <button
-                  class="custom-yellow-btn custom-btn-animation"
-                  data-text="Download"
-                >
-                  Download
-                </button>
-              </form>
-            </main>
-            <!-- <footer class="modal__footer">
-            <button class="modal__btn modal__btn-primary">Continue</button>
-            <button
-              class="modal__btn"
-              data-micromodal-close
-              aria-label="Close this dialog window"
-            >
-              Close
-            </button>
-          </footer> -->
-          </div>
-        </div>
-      </div>
-
+        <!-- Modal markup -->
+        <?php include './modal.php'; ?>
+    
       <header class="relative z-20">
-        <nav
-          class="font-medium text-[#282828] inset-x-5 sm:inset-x-14 lg:inset-x-[7.5rem] fixed flex gap-6 lg:gap-12 justify-between items-center border-[1px] border-[#A4C9FF] backdrop-blur-xl bg-white/60 rounded-[6rem] p-2 pl-8 mt-6"
-        >
-          <a href="/SLS_website" class="">
-            <img src="./assets/logos/SLS_logo.svg" alt="logo" class="md:w-56" />
-          </a>
-
-          <ul class="hidden lg:flex w-full gap-12 justify-end items-center">
-            <li>
-              <a href="/SLS_website" class="font-semibold text-[#FE9F0F]"
-                >Home</a
-              >
-            </li>
-            <li><a href="/SLS_website/about">About Us</a></li>
-            <li><a href="/SLS_website/courses">Courses</a></li>
-            <li><a href="/SLS_website/blogs">Blogs</a></li>
-            <li>
-              <button
-                class="custom-blue-btn custom-btn-animation"
-                data-text="Contact Us"
-              >
-                <a href="/SLS_website/contact.php">Contact Us</a>
-              </button>
-            </li>
-          </ul>
-
-          <button
-            id="menu-btn"
-            class="lg:hidden text-gray-700 focus:outline-none mr-4"
-          >
-            <svg
-              class="w-6 h-6"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button>
-        </nav>
+        <?php include 'navbar.php'; ?>
       </header>
 
       <!-- Mobile nav menu -->
-      <ul
-        class="fixed top-0 left-0 flex flex-col lg:hidden w-full h-full gap-12 md:gap-6 justify-center items-center bg-white z-50 mobile-nav"
-      >
-        <button>
-          <img
-            src="./assets/images/close-x-vector.svg"
-            alt="Close menu"
-            id="close-menu-btn"
-            class="w-8 absolute right-5 top-5"
-          />
-        </button>
-        <a href="/SLS_website" class="">
-          <img src="./assets/logos/SLS_logo.svg" alt="logo" class="md:w-56" />
-        </a>
-        <li>
-          <a href="/SLS_website" class="font-semibold text-[#FE9F0F]">Home</a>
-        </li>
-        <li><a href="/SLS_website/about">About Us</a></li>
-        <li><a href="/SLS_website/courses">Courses</a></li>
-        <li><a href="/SLS_website/blogs">Blogs</a></li>
-        <li>
-          <button
-            class="custom-blue-btn custom-btn-animation"
-            data-text="Contact Us"
-          >
-            <a href="/SLS_website/contact.php">Contact Us</a>
-          </button>
-        </li>
-      </ul>
+    
 
       <div
         id="hero-section"
         class="relative z-0 w-full overflow-hidden bg-no-repeat bg-cover bg-[70%_50%] lg:bg-right-bottom"
-        style="background-image: url('./assets/images/hero-image.png')"
+        style="background-image: url('../assets/images/hero-image.png')"
       >
         <div
           class="absolute w-screen h-full bg-gradient-to-l from-transparent from-[42%] to-[#114f9fa2] -z-10"
         ></div>
         <img
-          src="./assets/images/wave-illustration.svg"
+          src="../assets/images/wave-illustration.svg"
           alt=""
           class="invisible md:visible absolute right-0 top-[20%]"
         />
@@ -227,10 +49,10 @@
               class="absolute -top-28 left-1 sm:-right-10 sm:left-auto sm:top-auto flex flex-col gap-4"
             >
               <button class="home-hero-translate-btn">
-                <img src="./assets/images/translate.svg" alt="" />
+                <img src="../assets/images/translate.svg" alt="" />
               </button>
               <img
-                src="./assets/images/arrow-vector.svg"
+                src="../assets/images/arrow-vector.svg"
                 alt=""
                 class="w-12 -scale-x-100 rotate-[55deg] translate-y-3 sm:scale-x-100 sm:rotate-0 sm:translate-y-0"
               />
@@ -311,7 +133,7 @@
                   <a href="" class="flex items-center">
                     Know more
                     <img
-                      src="./assets/images/arrow-right.svg"
+                      src="../assets/images/arrow-right.svg"
                       alt=""
                       class="ml-2"
                     />
@@ -320,7 +142,7 @@
               </div>
               <div class="shrink-0 w-4/5 sm:w-[28vw]">
                 <img
-                  src="./assets/images/DSH-exam.svg"
+                  src="../assets/images/DSH-exam.svg"
                   alt="illustration"
                   class="w-full"
                 />
@@ -332,7 +154,7 @@
             >
               <div class="shrink-0 w-4/5 sm:w-[28vw]">
                 <img
-                  src="./assets/images/DSH-exam.svg"
+                  src="../assets/images/DSH-exam.svg"
                   alt="illustration"
                   class="w-full"
                 />
@@ -353,7 +175,7 @@
                   <a href="" class="flex items-center">
                     Know more
                     <img
-                      src="./assets/images/arrow-right.svg"
+                      src="../assets/images/arrow-right.svg"
                       alt=""
                       class="ml-2"
                     />
@@ -382,7 +204,7 @@
                   <a href="" class="flex items-center">
                     Know more
                     <img
-                      src="./assets/images/arrow-right.svg"
+                      src="../assets/images/arrow-right.svg"
                       alt=""
                       class="ml-2"
                     />
@@ -391,7 +213,7 @@
               </div>
               <div class="shrink-0 w-4/5 sm:w-[28vw]">
                 <img
-                  src="./assets/images/DSH-exam.svg"
+                  src="../assets/images/DSH-exam.svg"
                   alt="illustration"
                   class="w-full"
                 />
@@ -447,7 +269,7 @@
                 ready to help you with anything.</span
               >
               <img
-                src="./assets/images/help-icons.svg"
+                src="../assets/images/help-icons.svg"
                 class="w-[90%] md:w-[72%] mx-auto"
                 alt=""
               />
@@ -496,7 +318,7 @@
         >
           <div class="courses-card">
             <img
-              src="./assets/images/TestDaf.svg"
+              src="../assets/images/TestDaf.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -514,10 +336,10 @@
                 >
               </div>
               <div class="yellow-link mt-4">
-                <a href="" class="flex items-center">
+                <a href="course-details/testDaf.php" class="flex items-center">
                   Know more
                   <img
-                    src="./assets/images/arrow-right.svg"
+                    src="../assets/images/arrow-right.svg"
                     alt=""
                     class="ml-2"
                   />
@@ -527,7 +349,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="./assets/images/TestDaf.svg"
+              src="../assets/images/TestDaf.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -543,10 +365,10 @@
                 >
               </div>
               <div class="yellow-link mt-4">
-                <a href="" class="flex items-center">
+                <a href="course-details/dsh.php" class="flex items-center">
                   Know more
                   <img
-                    src="./assets/images/arrow-right.svg"
+                    src="../assets/images/arrow-right.svg"
                     alt=""
                     class="ml-2"
                   />
@@ -556,7 +378,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="./assets/images/TestDaf.svg"
+              src="../assets/images/TestDaf.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -573,10 +395,10 @@
                 >
               </div>
               <div class="yellow-link mt-4">
-                <a href="" class="flex items-center">
+                <a href="course-details/telc.php" class="flex items-center">
                   Know more
                   <img
-                    src="./assets/images/arrow-right.svg"
+                    src="../assets/images/arrow-right.svg"
                     alt=""
                     class="ml-2"
                   />
@@ -586,7 +408,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="./assets/images/TestDaf.svg"
+              src="../assets/images/TestDaf.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -605,10 +427,10 @@
                 >
               </div>
               <div class="yellow-link mt-4">
-                <a href="" class="flex items-center">
+                <a href="course-details/abInitio.php" class="flex items-center">
                   Know more
                   <img
-                    src="./assets/images/arrow-right.svg"
+                    src="../assets/images/arrow-right.svg"
                     alt=""
                     class="ml-2"
                   />
@@ -618,7 +440,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="./assets/images/TestDaf.svg"
+              src="../assets/images/TestDaf.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -635,10 +457,10 @@
                 >
               </div>
               <div class="yellow-link mt-4">
-                <a href="" class="flex items-center">
+                <a href="course-details/deutschTest.php" class="flex items-center">
                   Know more
                   <img
-                    src="./assets/images/arrow-right.svg"
+                    src="../assets/images/arrow-right.svg"
                     alt=""
                     class="ml-2"
                   />
@@ -648,7 +470,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="./assets/images/TestDaf.svg"
+              src="../assets/images/TestDaf.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -666,10 +488,10 @@
                 >
               </div>
               <div class="yellow-link mt-4">
-                <a href="" class="flex items-center">
+                <a href="course-details/interculturalCommunicationTraining.php" class="flex items-center">
                   Know more
                   <img
-                    src="./assets/images/arrow-right.svg"
+                    src="../assets/images/arrow-right.svg"
                     alt=""
                     class="ml-2"
                   />
@@ -685,7 +507,7 @@
         class="relative h-max w-screen mt-16 sm:mt-40"
       >
         <img
-          src="./assets/images/wave-illustration-orange.svg"
+          src="../assets/images/wave-illustration-orange.svg"
           alt=""
           class="hidden sm:block absolute right-0 top-[20%]"
         />
@@ -693,7 +515,7 @@
           class="absolute h-[292px] w-[292px] right-0 top-[30%] translate-x-2/3 blur-[500px] rounded-full testimonial-glow"
         ></div>
         <img
-          src="./assets/images/wave-illustration-orange.svg"
+          src="../assets/images/wave-illustration-orange.svg"
           alt=""
           class="hidden lg:block absolute rotate-180 left-0 top-[60%]"
         />
@@ -785,12 +607,12 @@
                 </ul>
               </div>
               <img
-                src="./assets/images/double-quotes-open.svg"
+                src="../assets/images/double-quotes-open.svg"
                 alt=""
                 class="absolute -top-3 left-6 sm:-left-4"
               />
               <img
-                src="./assets/images/double-quotes-close.svg"
+                src="../assets/images/double-quotes-close.svg"
                 alt=""
                 class="absolute bottom-0 right-0 -translate-x-6 sm:translate-x-4 translate-y-3"
               />
@@ -812,21 +634,21 @@
           class="w-full relative flex-1 border-8 border-white rounded-xl overflow-hidden"
         >
           <img
-            src="./assets/images/play_btn.svg"
+            src="../assets/images/play_btn.svg"
             alt=""
             class="absolute inset-[40%] w-[15%]"
           />
-          <img src="./assets/images/video_img_1.jpg" alt="" class="w-full" />
+          <img src="../assets/images/video_img_1.jpg" alt="" class="w-full" />
         </div>
         <div
           class="w-full relative flex-1 border-8 border-white rounded-xl overflow-hidden"
         >
           <img
-            src="./assets/images/play_btn.svg"
+            src="../assets/images/play_btn.svg"
             alt=""
             class="absolute inset-[40%] w-[15%]"
           />
-          <img src="./assets/images/video_img_2.jpg" alt="" class="w-full" />
+          <img src="../assets/images/video_img_2.jpg" alt="" class="w-full" />
         </div>
       </div>
 
@@ -845,7 +667,7 @@
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
         >
           <div class="blog-card">
-            <img src="./assets/images/blog-cover-1.jpg" alt="" />
+            <img src="../assets/images/blog-cover-1.jpg" alt="" />
             <div class="blog-details-wrapper">
               <div class="Blog-details-container">
                 <span class="blog-category">Category - 01 April, 2024</span>
@@ -866,7 +688,7 @@
             </div>
           </div>
           <div class="blog-card">
-            <img src="./assets/images/blog-cover-1.jpg" alt="" />
+            <img src="../assets/images/blog-cover-1.jpg" alt="" />
             <div class="blog-details-wrapper">
               <div class="Blog-details-container">
                 <span class="blog-category">Category - 01 April, 2024</span>
@@ -887,7 +709,7 @@
             </div>
           </div>
           <div class="blog-card max-lg:!hidden">
-            <img src="./assets/images/blog-cover-1.jpg" alt="" />
+            <img src="../assets/images/blog-cover-1.jpg" alt="" />
             <div class="blog-details-wrapper">
               <div class="Blog-details-container">
                 <span class="blog-category">Category - 01 April, 2024</span>
@@ -915,130 +737,11 @@
         </div>
       </div>
 
-      <div id="downloadbrochure-section" class="relative h-screen w-screen">
-        <div
-          class="gradient-circle-blue absolute top-[10%] right-[10%] z-[-10]"
-        ></div>
-        <div
-          class="max-sm:hidden gradient-circle-blue absolute top-[40%] left-[10%] z-[-10]"
-        ></div>
-        <img
-          src="./assets/images/wave-illustration-orange.svg"
-          alt=""
-          class="absolute right-0 top-[20%] max-sm:translate-x-1/3"
-        />
-        <img
-          src="./assets/images/wave-illustration-orange.svg"
-          alt=""
-          class="absolute rotate-180 left-0 top-[60%] max-sm:-translate-x-1/3"
-        />
-        <div
-          class="w-full h-full flex flex-col gap-12 justify-center items-center"
-        >
-          <div
-            class="clashdisplay text-gray-900 font-medium text-[32px] sm:text-5xl flex flex-col items-center gap-1 sm:gap-4"
-          >
-            <span> Kein Deutsch,</span>
-            <span>Kein Deutschland</span>
-          </div>
-          <button
-            class="custom-yellow-btn custom-btn-animation"
-            data-text="Download Brochure"
-            data-micromodal-trigger="modal-1"
-          >
-            Download Brochure
-          </button>
-        </div>
-      </div>
+      <?php include "brochure-section.php";?>
 
-      <footer>
-        <div class="bg-gray-50 px-5 py-10 sm:p-20 lg:px-[7.5rem] lg:py-20">
-          <div class="pb-14">
-            <img src="./assets/logos/SLS_logo.svg" alt="logo" class="w-56" />
-          </div>
-
-          <div
-            class="flex flex-col lg:flex-row justify-between gap-14 lg:gap-8"
-          >
-            <!-- Description Section -->
-            <div
-              class="col-span-1 h-max max-lg:max-w-md flex flex-col gap-8 border-[var(--brand-blue)] border-l-2 pl-10"
-            >
-              <p class="text-[#262E2B] mb-4">
-                SLS is the best language learning institute to learn German with
-                the best experience! Join Now!
-              </p>
-              <!-- Social Links -->
-              <div class="flex space-x-4">
-                <a href="#" class="text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/facebook-link.svg" alt="" />
-                </a>
-                <a href="#" class="text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/twitter-link.svg" alt="" />
-                </a>
-                <a href="#" class="text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/instagram-link.svg" alt="" />
-                </a>
-                <a href="#" class="text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/linkedin-link.svg" alt="" />
-                </a>
-              </div>
-            </div>
-
-            <div
-              class="w-full flex flex-col sm:flex-row gap-10 sm:gap-6 lg:gap-16 justify-between"
-            >
-              <!-- Company Section -->
-              <div class="footer-column">
-                <h3 class="footer-column-heading">COMPANY</h3>
-                <ul class="footer-column-links">
-                  <li><a href="#" class="footer-column-link">Courses</a></li>
-                  <li>
-                    <a href="#" class="footer-column-link">Testimonials</a>
-                  </li>
-                  <li><a href="#" class="footer-column-link">Blogs</a></li>
-                </ul>
-              </div>
-
-              <!-- About Us Section -->
-              <div class="footer-column">
-                <h3 class="footer-column-heading">ABOUT US</h3>
-                <ul class="footer-column-links">
-                  <li>
-                    <a href="#" class="footer-column-link">Who we are?</a>
-                  </li>
-                  <li><a href="#" class="footer-column-link">Founder</a></li>
-                  <li>
-                    <a href="#" class="footer-column-link">Privacy Policies</a>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Contact Section -->
-              <div class="footer-column">
-                <h3 class="footer-column-heading">CONTACT</h3>
-                <div class="footer-column-links">
-                  <div class="footer-contact-link">
-                    <img src="assets/images/phone-icon.svg" alt="" />
-                    <a href="tel:+912020213213">+91 20202 13213</a>
-                  </div>
-                  <div class="footer-contact-link">
-                    <img src="assets/images/mail-icon.svg" alt="" />
-                    <a
-                      href="mailto:languagelearning@sprachenatelier.in"
-                      class="break-all"
-                    >
-                      languagelearning@sprachenatelier.in
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <?php include "footer.php";?>
     </div>
-    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="./path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.7.1"></script>
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="./assets/js/script.js"></script>
