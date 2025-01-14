@@ -56,13 +56,13 @@
                   </div>
                   <div class="w-full">
                     <label
-                      for="email"
+                      for="modal-email"
                       class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2"
                       >Email</label
                     >
                     <input
-                      name="email"
-                      id="email"
+                      name="modal-email"
+                      id="modal-email"
                       type="email"
                       placeholder="Enter email"
                       class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium"
