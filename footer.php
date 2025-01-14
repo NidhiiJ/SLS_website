@@ -18,16 +18,16 @@
               </p>
               <!-- Social Links -->
               <div class="flex space-x-4">
-                <a href="#" class="text-orange-500 hover:text-orange-600">
+                <a href="https://www.facebook.com/sprachenateliermumbai/" class="text-orange-500 hover:text-orange-600">
                   <img src="assets/images/facebook-link.svg" alt="" />
                 </a>
-                <a href="#" class="text-orange-500 hover:text-orange-600">
+                <a href=" https://www.youtube.com/channel/UC8JpxU-LOBCNMc-Rj7kSYAw " class="text-orange-500 hover:text-orange-600">
                   <img src="assets/images/twitter-link.svg" alt="" />
                 </a>
-                <a href="#" class="text-orange-500 hover:text-orange-600">
+                <a href="https://www.instagram.com/sprachenatelier_languagestudio/" class="text-orange-500 hover:text-orange-600">
                   <img src="assets/images/instagram-link.svg" alt="" />
                 </a>
-                <a href="#" class="text-orange-500 hover:text-orange-600">
+                <a href=" https://in.linkedin.com/in/frau-ujwal-anil-948859114" class="text-orange-500 hover:text-orange-600">
                   <img src="assets/images/linkedin-link.svg" alt="" />
                 </a>
               </div>

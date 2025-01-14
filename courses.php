@@ -61,9 +61,10 @@
         id="courses-list"
         class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-16 lg:gap-16 mx-5 sm:mx-14 lg:mx-[7.5rem] mt-12 sm:mt-28"
       >
+        <!-- TestDaF Examination -->
         <div class="courses-card">
           <img
-            src="../assets/images/TestDaf.svg"
+            src="../assets/images/course-svg/test-daf.svg"
             alt=""
             class="mx-auto w-[60%]"
           />
@@ -92,9 +93,10 @@
             </div>
           </div>
         </div>
+        <!-- DSH Examination -->
         <div class="courses-card">
           <img
-            src="../assets/images/TestDaf.svg"
+            src="../assets/images/course-svg/dsh-exam.svg"
             alt=""
             class="mx-auto w-[60%]"
           />
@@ -121,9 +123,10 @@
             </div>
           </div>
         </div>
+        <!-- Telc Examination -->
         <div class="courses-card">
           <img
-            src="../assets/images/TestDaf.svg"
+            src="../assets/images/course-svg/telc-exam.svg"
             alt=""
             class="mx-auto w-[60%]"
           />
@@ -151,9 +154,10 @@
             </div>
           </div>
         </div>
+        <!-- Ab Initio, SL and HL German Examination of IB -->
         <div class="courses-card">
           <img
-            src="../assets/images/TestDaf.svg"
+            src="../assets/images/course-svg/ab-initio.svg"
             alt=""
             class="mx-auto w-[60%]"
           />
@@ -183,9 +187,10 @@
             </div>
           </div>
         </div>
+        <!-- Deutsch-Test für Zuwanderer (DTZ) -->
         <div class="courses-card">
           <img
-            src="../assets/images/TestDaf.svg"
+            src="../assets/images/course-svg/zuwanderer.svg"
             alt=""
             class="mx-auto w-[60%]"
           />
@@ -213,9 +218,10 @@
             </div>
           </div>
         </div>
+        <!-- Intercultural Communication Training -->
         <div class="courses-card">
           <img
-            src="../assets/images/TestDaf.svg"
+            src="../assets/images/course-svg/ict.svg"
             alt=""
             class="mx-auto w-[60%]"
           />

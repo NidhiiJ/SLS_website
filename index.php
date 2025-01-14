@@ -130,7 +130,7 @@
                   language skills.
                 </p>
                 <div class="yellow-link w-max mt-4">
-                  <a href="" class="flex items-center">
+                  <a href="/courses.php" class="flex items-center">
                     Know more
                     <img
                       src="../assets/images/arrow-right.svg"
@@ -142,7 +142,7 @@
               </div>
               <div class="shrink-0 w-4/5 sm:w-[28vw]">
                 <img
-                  src="../assets/images/DSH-exam.svg"
+                  src="../assets/images/discover.svg"
                   alt="illustration"
                   class="w-full"
                 />
@@ -154,7 +154,7 @@
             >
               <div class="shrink-0 w-4/5 sm:w-[28vw]">
                 <img
-                  src="../assets/images/DSH-exam.svg"
+                  src="../assets/images/knowgermany.svg"
                   alt="illustration"
                   class="w-full"
                 />
@@ -172,7 +172,7 @@
                   German language.
                 </p>
                 <div class="yellow-link w-max mt-4">
-                  <a href="" class="flex items-center">
+                  <a href="/blogs.php" class="flex items-center">
                     Know more
                     <img
                       src="../assets/images/arrow-right.svg"
@@ -201,7 +201,7 @@
                   research bent of mind.
                 </p>
                 <div class="yellow-link w-max mt-4">
-                  <a href="" class="flex items-center">
+                  <a href="/about.php" class="flex items-center">
                     Know more
                     <img
                       src="../assets/images/arrow-right.svg"
@@ -213,7 +213,7 @@
               </div>
               <div class="shrink-0 w-4/5 sm:w-[28vw]">
                 <img
-                  src="../assets/images/DSH-exam.svg"
+                  src="../assets/images/learningmadeinteresting.svg"
                   alt="illustration"
                   class="w-full"
                 />
@@ -238,10 +238,9 @@
             <div class="flex flex-col metric-box h-full">
               <span class="metric-heading">Success Stories</span>
               <span class="metric-number">172</span>
-              <span class="metric-description"
-                >Lorem ipsum dolor sit amet consectetur. Id velit morbi in id.
-                Ultrices a aliquet adipiscing at velit odio.</span
-              >
+              <span class="metric-description">
+                Empowering Aspirations, Transforming Lives – The Sprachenatelier's success story
+              </span>
             </div>
 
             <div class="flex sm:hidden flex-col metric-box h-full">
@@ -318,7 +317,7 @@
         >
           <div class="courses-card">
             <img
-              src="../assets/images/TestDaf.svg"
+              src="../assets/images/course-svg/test-daf.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -349,7 +348,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="../assets/images/TestDaf.svg"
+              src="../assets/images/course-svg/dsh-exam.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -378,7 +377,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="../assets/images/TestDaf.svg"
+              src="../assets/images/course-svg/telc-exam.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -408,7 +407,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="../assets/images/TestDaf.svg"
+              src="../assets/images/course-svg/ab-initio.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -440,7 +439,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="../assets/images/TestDaf.svg"
+              src="../assets/images/course-svg/zuwanderer.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -470,7 +469,7 @@
           </div>
           <div class="courses-card">
             <img
-              src="../assets/images/TestDaf.svg"
+              src="../assets/images/course-svg/ict.svg"
               alt=""
               class="mx-auto w-[80%]"
             />
@@ -540,70 +539,7 @@
                 class="glide__track testimonial-slide rounded-[20px]"
                 data-glide-el="track"
               >
-                <ul class="glide__slides">
-                  <li class="glide__slide">
-                    <div class="bg-white px-6 sm:px-14 py-10 sm:py-16">
-                      <p
-                        class="generalsans italic text-center mb-6 sm:mb-10 text-xs sm:text-base text-[var(--gray-700)]"
-                      >
-                        “Sprachenatelier Language studio has helped me a lot in
-                        my journey to learn German. The CEO Frau Ujwal is a
-                        great mentor and teacher. The course is structured in a
-                        very scientific and systematic manner. During the
-                        Testdaf there is a continuous drill of language training
-                        done with the students to get the best results. There
-                        are a lot of sample papers done with us and corrected
-                        very meticulously by Frau Ujwal herself..”
-                      </p>
-                      <p
-                        class="generalsans text-sm sm:text-lg font-medium text-center"
-                      >
-                        - Tyrone Pereira shares his training experience with SLS
-                      </p>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="bg-white px-6 sm:px-14 py-10 sm:py-16">
-                      <p
-                        class="generalsans italic text-center mb-6 sm:mb-10 text-xs sm:text-base text-[var(--gray-700)]"
-                      >
-                        “Sprachenatelier Language studio has helped me a lot in
-                        my journey to learn German. The CEO Frau Ujwal is a
-                        great mentor and teacher. The course is structured in a
-                        very scientific and systematic manner. During the
-                        Testdaf there is a continuous drill of language training
-                        done with the students to get the best results. There
-                        are a lot of sample papers done with us and corrected
-                        very meticulously by Frau Ujwal herself..”
-                      </p>
-                      <p
-                        class="generalsans text-sm sm:text-lg font-medium text-center"
-                      >
-                        - Tyrone Pereira shares his training experience with SLS
-                      </p>
-                    </div>
-                  </li>
-                  <li class="glide__slide">
-                    <div class="bg-white px-6 sm:px-14 py-10 sm:py-16">
-                      <p
-                        class="generalsans italic text-center mb-6 sm:mb-10 text-xs sm:text-base text-[var(--gray-700)]"
-                      >
-                        “Sprachenatelier Language studio has helped me a lot in
-                        my journey to learn German. The CEO Frau Ujwal is a
-                        great mentor and teacher. The course is structured in a
-                        very scientific and systematic manner. During the
-                        Testdaf there is a continuous drill of language training
-                        done with the students to get the best results. There
-                        are a lot of sample papers done with us and corrected
-                        very meticulously by Frau Ujwal herself..”
-                      </p>
-                      <p
-                        class="generalsans text-sm sm:text-lg font-medium text-center"
-                      >
-                        - Tyrone Pereira shares his training experience with SLS
-                      </p>
-                    </div>
-                  </li>
+                <ul id="testimonial-container" class="glide__slides">
                 </ul>
               </div>
               <img
