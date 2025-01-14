@@ -8,30 +8,32 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['number'] = $_POST['number'];
     $_SESSION['email'] = $_POST['email'];
     $_SESSION['course-name'] = $_POST['course-name'];
+    $_SESSION['enquiry-message'] = $_POST['enquiry-message'];
 
     // Retrieving data
     $name = htmlspecialchars($_SESSION['name']);
     $number = htmlspecialchars($_SESSION['number']);
     $email = htmlspecialchars($_SESSION['email']);
     $courseName = htmlspecialchars($_SESSION['course-name']);
+    $message = htmlspecialchars($_SESSION['enquiry-message']);
 
     // Email details
     $subject = 'Inquiry via Website';
     $to = "nidhi.flayk@gmail.com";
-    $headers = "From: Attorneys & Associates <nidhi.flayk@gmail.com>\r\n";
-    // $headers .= "Reply-To: $cphone\r\n";
-    $headers .= "CC: penikalaryan9@gmail.com\r\n";
+    $headers = "From: SLS <nidhi.flayk@gmail.com>\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "CC: nidhi52.work@gmail.com\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
     // Email body
-    $txt = "Dear Team,\n\nYou have received a new booking inquiry via the landing page. The details are as follows:\n\n" .
+    $txt = "Dear Team,\n\nYou have received a new booking inquiry via the Website form. The details are as follows:\n\n" .
            "Name: $name\n" .
-           "Phone: $phone\n" .
+           "Phone: $number\n" .
            "Email: $email\n" .
+           "Course Name: $courseName\n".
            "Message: $message\n\n";
 
     // Send email
-    // window.location.replace('https://attorneysassociates.com');
     if (mail($to, $subject, $txt, $headers)) {
         echo "<script>
                 alert('Thank You! Our team will reach out to you shortly.');
@@ -136,7 +138,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               Contact Details
             </span>
             <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="contact-form" class="generalsans font-medium leading-10">
-              <span>Hello, I am</span>
+              <span class="mr-2">Hello, I am</span>
               <input
                 name="name"
                 type="text"
