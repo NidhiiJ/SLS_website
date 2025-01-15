@@ -17,18 +17,18 @@
                 the best experience! Join Now!
               </p>
               <!-- Social Links -->
-              <div class="flex space-x-4">
-                <a href="https://www.facebook.com/sprachenateliermumbai/" class="text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/facebook-link.svg" alt="" />
+              <div class="flex h-4 space-x-4">
+                <a href="https://www.facebook.com/sprachenateliermumbai/" class="h-full text-orange-500 hover:text-orange-600">
+                  <img src="assets/images/facebook-link.svg" class="h-full w-full" alt="" />
                 </a>
-                <a href=" https://www.youtube.com/channel/UC8JpxU-LOBCNMc-Rj7kSYAw " class="text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/twitter-link.svg" alt="" />
+                <a href=" https://www.youtube.com/channel/UC8JpxU-LOBCNMc-Rj7kSYAw " class="h-full text-orange-500 hover:text-orange-600">
+                  <img src="assets/images/youtube-link.svg" class="h-full w-full" alt="" />
                 </a>
-                <a href="https://www.instagram.com/sprachenatelier_languagestudio/" class="text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/instagram-link.svg" alt="" />
+                <a href="https://www.instagram.com/sprachenatelier_languagestudio/" class="h-full text-orange-500 hover:text-orange-600">
+                  <img src="assets/images/instagram-link.svg" class="h-full w-full" alt="" />
                 </a>
-                <a href=" https://in.linkedin.com/in/frau-ujwal-anil-948859114" class="text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/linkedin-link.svg" alt="" />
+                <a href=" https://in.linkedin.com/in/frau-ujwal-anil-948859114" class="h-full text-orange-500 hover:text-orange-600">
+                  <img src="assets/images/linkedin-link.svg" class="h-full w-full" alt="" />
                 </a>
               </div>
             </div>

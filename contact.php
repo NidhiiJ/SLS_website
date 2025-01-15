@@ -117,86 +117,59 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
       </div>
 
-        <div
-          class="courses-card-box after:!hidden border border-[var(--blue-100)] max-sm:!px-4"
-          style="height: max-content"
-        >
-          <div class="flex flex-col gap-2 items-start">
-            <span
-              class="clashdisplay font-medium text-[var(--gray-900)] text-[24px]"
-            >
-              Contact Details
-            </span>
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="contact-form" class="generalsans font-medium leading-10">
-              <span class="mr-2">Hello, I am</span>
-              <input
-                name="name"
-                type="text"
-                placeholder="Your name"
-                class="outline-none bg-transparent w-[40vw] sm:w-[30vw] lg:w-[20vw] border-0 border-b-2 border-[var(--gray-300)] -translate-y-3 mt-2"
-              />
-              <br />
-              <span>my contact</span>
-              <input
-                name="email"
-                type="text"
-                placeholder="your email"
-                class="bg-transparent w-[40vw] sm:w-[30vw] lg:w-[20vw] border-0 border-b-2 border-[var(--gray-300)] -translate-y-3 mt-2"
-              />
-              <span>&</span>
-              <input
-                name="number"
-                type="text"
-                placeholder="your number"
-                class="bg-transparent w-[40vw] sm:w-[30vw] lg:w-[20vw] border-0 border-b-2 border-[var(--gray-300)] -translate-y-3 mt-2"
-              />
-              <br />
-              <span>I am keen to start learning German with</span>
-              <select
-                name="course-name"
-                id="courses"
-                class="bg-transparent w-[40vw] sm:w-[30vw] lg:w-[20vw] border-0 border-b-2 border-[var(--gray-300)] -translate-y-3 mt-2"
-              >
-                <option value="TestDaF Examination">TestDaF Examination</option>
-                <option value="DSH Examination">DSH Examination</option>
-                <option value="Telc Examination">Telc Examination</option>
-                <option value="Ab Initio, SL and HL German Examination of IB">
-                  Ab Initio, SL and HL German Examination of IB
-                </option>
-                <option value="Deutsch-Test für Zuwanderer (DTZ)">
-                  Deutsch-Test für Zuwanderer (DTZ)
-                </option>
-                <option value="Intercultural Communication Training">
-                  Intercultural Communication Training
-                </option>
-              </select>
-              <br />
-              <span>
-                We love hearing from you, feel free to drop your questions and
-                messages</span
-              >
-              <textarea
-                name="enquiry-message"
-                placeholder="Here"
-                id="message"
-                class="bg-transparent w-full border-0 border-b-2 border-[var(--gray-300)]"
-              ></textarea>
-              <button
-                type="submit"
-                class="custom-yellow-btn custom-btn-animation"
-                data-text="Submit"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
+      <div class="courses-card-box after:!hidden border border-[var(--blue-100)] max-sm:!px-4"
+        style="height: max-content">
+        <div class="flex flex-col gap-2 items-start">
+          <span class="clashdisplay font-medium text-[var(--gray-900)] text-[24px]">
+            Contact Details
+          </span>
+          <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" id="contact-form"
+            class="generalsans font-medium leading-10">
+            <span class="mr-2">Hello, I am</span>
+            <input name="name" type="text" placeholder="Your name"
+              class="outline-none bg-transparent w-[40vw] sm:w-[30vw] lg:w-[20vw] border-0 border-b-2 border-[var(--gray-300)] -translate-y-3 mt-2" />
+            <br />
+            <span>my contact</span>
+            <input name="email" type="text" placeholder="your email"
+              class="bg-transparent w-[40vw] sm:w-[30vw] lg:w-[20vw] border-0 border-b-2 border-[var(--gray-300)] -translate-y-3 mt-2" />
+            <span>&</span>
+            <input name="number" type="text" placeholder="your number"
+              class="bg-transparent w-[40vw] sm:w-[30vw] lg:w-[20vw] border-0 border-b-2 border-[var(--gray-300)] -translate-y-3 mt-2" />
+            <br />
+            <span>I am keen to start learning German with</span>
+            <select name="course-name" id="courses"
+              class="bg-transparent w-[40vw] sm:w-[30vw] lg:w-[20vw] border-0 border-b-2 border-[var(--gray-300)] -translate-y-3 mt-2">
+              <option value="TestDaF Examination">TestDaF Examination</option>
+              <option value="DSH Examination">DSH Examination</option>
+              <option value="Telc Examination">Telc Examination</option>
+              <option value="Ab Initio, SL and HL German Examination of IB">
+                Ab Initio, SL and HL German Examination of IB
+              </option>
+              <option value="Deutsch-Test für Zuwanderer (DTZ)">
+                Deutsch-Test für Zuwanderer (DTZ)
+              </option>
+              <option value="Intercultural Communication Training">
+                Intercultural Communication Training
+              </option>
+            </select>
+            <br />
+            <span>
+              We love hearing from you, feel free to drop your questions and
+              messages</span>
+            <textarea name="enquiry-message" placeholder="Here" id="message"
+              class="bg-transparent w-full border-0 border-b-2 border-[var(--gray-300)]"></textarea>
+            <button type="submit" class="custom-yellow-btn custom-btn-animation" data-text="Submit">
+              Submit
+            </button>
+          </form>
         </div>
       </div>
+    </div>
 
     <!-- map -->
     <div class="mx-5 sm:mx-14 lg:mx-[7.5rem] mt-14 sm:mt-12 lg:mt-20 h-full rounded-2xl overflow-clip">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.6106847625106!2d77.61176327484071!3d12.93272528737909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae11bcf72ae193%3A0x4a8418c28db5eadf!2sTeamLease%20Digital%20Private%20Ltd.!5e0!3m2!1sen!2sin!4v1732829057778!5m2!1sen!2sin"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.562472559075!2d77.75461257484189!3d12.99981248731816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0x674c2fe66f296886!2sXQX4%2BWV%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1736965512608!5m2!1sen!2sin"
         width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>

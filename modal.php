@@ -12,13 +12,13 @@
         </button>
       </header>
       <main class="modal__content" id="modal-1-content">
-        <form id="download-brochure-form" action="">
+        <form id="download-brochure-form" onsubmit="downloadPDF(event)" action="">
           <div class="space-y-4 w-full mb-10">
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
               <div class="flex-grow">
                 <label for="modal-firstname" class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2">First
                   name</label>
-                <input type="text" name="modal-firstname" id="modal-firstname" placeholder="Enter first name"
+                <input required type="text" name="modal-firstname" id="modal-firstname" placeholder="Enter first name"
                   class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium" />
               </div>
               <div class="flex-grow">
@@ -30,13 +30,13 @@
             </div>
             <div class="w-full">
               <label for="modal-email" class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2">Email</label>
-              <input name="modal-email" id="modal-email" type="email" placeholder="Enter email"
+              <input required name="modal-email" id="modal-email" type="email" placeholder="Enter email"
                 class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium" />
             </div>
             <div class="w-full">
               <label for="modal-contact" class="block text-base text-[rgb(75, 85, 99)] font-medium mb-2">Contact
                 number</label>
-              <input name="modal-contact" id="modal-contact" type="text" value="+91"
+              <input required name="modal-contact" id="modal-contact" type="number" placeholder="Enter phone number"
                 class="w-full px-4 py-3 border border-gray-300 rounded-md shadow text-[rgb(75, 85, 99)] font-medium" />
             </div>
           </div>
@@ -54,3 +54,15 @@
     </div>
   </div>
 </div>
+
+<script>
+  function downloadPDF(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Trigger the download
+    const link = document.createElement('a');
+    link.href = '../assets/Sprachenatelie_Language_Studio.pdf'; // Path to the PDF file in the assets folder
+    link.download = 'Sprachenatelie_Language_Studio.pdf'; // File name for the downloaded file
+    link.click();
+  }
+</script>
