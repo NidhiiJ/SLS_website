@@ -40,11 +40,11 @@
               <div class="footer-column">
                 <h3 class="footer-column-heading">COMPANY</h3>
                 <ul class="footer-column-links">
-                  <li><a href="#" class="footer-column-link">Courses</a></li>
+                  <li><a href="/courses.php" class="footer-column-link">Courses</a></li>
                   <li>
-                    <a href="#" class="footer-column-link">Testimonials</a>
+                    <a href="/#testimonials-section" class="footer-column-link">Testimonials</a>
                   </li>
-                  <li><a href="#" class="footer-column-link">Blogs</a></li>
+                  <li><a href="/#blogs-section" class="footer-column-link">Blogs</a></li>
                 </ul>
               </div>
 
@@ -53,12 +53,9 @@
                 <h3 class="footer-column-heading">ABOUT US</h3>
                 <ul class="footer-column-links">
                   <li>
-                    <a href="#" class="footer-column-link">Who we are?</a>
+                    <a href="/about.php" class="footer-column-link">Who we are?</a>
                   </li>
-                  <li><a href="#" class="footer-column-link">Founder</a></li>
-                  <li>
-                    <a href="#" class="footer-column-link">Privacy Policies</a>
-                  </li>
+                  <li><a href="/about.php#about-the-founder" class="footer-column-link">Founder</a></li>
                 </ul>
               </div>
 
