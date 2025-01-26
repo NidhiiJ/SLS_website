@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Storing input in session variables
   // change to your fields
@@ -19,10 +18,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   // Email details
   $subject = 'Inquiry via Website';
-  $to = "nidhi.flayk@gmail.com";
-  $headers = "From: SLS <nidhi.flayk@gmail.com>\r\n";
+  $to = "datasls84@gmail.com";
+  $headers = "From: SLS <datasls84@gmail.com>\r\n";
   $headers .= "Reply-To: $email\r\n";
-  $headers .= "CC: nidhi52.work@gmail.com\r\n";
+  // $headers .= "CC: nidhi52.work@gmail.com\r\n";  
   $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
   // Email body
@@ -37,12 +36,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (mail($to, $subject, $txt, $headers)) {
     echo "<script>
                 alert('Thank You! Our team will reach out to you shortly.');
+                window.location.href = 'contact.php';
               </script>";
   } else {
     echo "<script>
                 alert('Oops! An unexpected error occurred. Failed to send Email.');
+                window.location.href = 'contact.php';
               </script>";
-  }
+            }
+            exit;
 }
 ?>
 <!DOCTYPE html>

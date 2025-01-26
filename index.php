@@ -97,12 +97,12 @@
                 </a>
               </div>
             </div>
-            <div class="shrink-0 w-4/5 sm:w-[28vw]">
+            <div class="shrink-0 sm:w-[28vw]">
               <img src="../assets/images/discover.svg" alt="illustration" class="w-full" />
             </div>
           </div>
           <div id="wuyc-2" class="flex flex-col sm:flex-row gap-8 sm:gap-20 justify-between items-center">
-            <div class="shrink-0 w-4/5 sm:w-[28vw]">
+            <div class="shrink-0 sm:w-[28vw]">
               <img src="../assets/images/knowgermany.svg" alt="illustration" class="w-full" />
             </div>
             <div>
@@ -142,7 +142,7 @@
                 </a>
               </div>
             </div>
-            <div class="shrink-0 w-4/5 sm:w-[28vw]">
+            <div class="shrink-0 sm:w-[28vw]">
               <img src="../assets/images/learningmadeinteresting.svg" alt="illustration" class="w-full" />
             </div>
           </div>
@@ -446,9 +446,11 @@
         </div>
       </div>
       <div class="mt-14 flex flex-row justify-center">
-        <button class="custom-yellow-outline-btn" data-text="View More">
-          <span> View More </span>
-        </button>
+        <a href="/blogs.php">
+          <button class="custom-yellow-outline-btn" data-text="View More">
+            <span> View More </span>
+          </button>
+        </a>
       </div>
     </div>
 

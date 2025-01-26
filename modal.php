@@ -1,3 +1,36 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Sanitize and validate inputs
+  $firstname = htmlspecialchars($_POST['modal-firstname']);
+  $lastname = htmlspecialchars($_POST['modal-lastname']);
+  $email = htmlspecialchars($_POST['modal-email']);
+  $contact = htmlspecialchars($_POST['modal-contact']);
+
+  // Email details
+  $subject = 'Brochure Download Request';
+  $to = "datasls84@gmail.com";
+  $headers = "From: SLS <datasls84@gmail.com>\r\n";
+  $headers .= "Reply-To: $email\r\n";
+  $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+  // Email body
+  $message = "Dear Team,\n\nYou have received a new brochure download request. The details are as follows:\n\n" .
+    "First Name: $firstname\n" .
+    "Last Name: $lastname\n" .
+    "Email: $email\n" .
+    "Contact Number: $contact\n\n";
+
+  // Send email
+  if (mail($to, $subject, $message, $headers)) {
+    exit;
+  } else {
+    echo json_encode(['success' => false, 'message' => 'Failed to send the email.']);
+  }
+  exit;
+}
+
+?>
+
 <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
   <div class="modal__overlay" tabindex="-1" data-micromodal-close></div>
   <div class="modal__container__wrapper">
@@ -12,7 +45,7 @@
         </button>
       </header>
       <main class="modal__content" id="modal-1-content">
-        <form id="download-brochure-form" onsubmit="downloadPDF(event)" action="">
+        <form id="download-brochure-form" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
           <div class="space-y-4 w-full mb-10">
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full">
               <div class="flex-grow">
@@ -54,15 +87,37 @@
     </div>
   </div>
 </div>
-
 <script>
-  function downloadPDF(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
 
-    // Trigger the download
-    const link = document.createElement('a');
-    link.href = '../assets/Sprachenatelie_Language_Studio.pdf'; // Path to the PDF file in the assets folder
-    link.download = 'Sprachenatelie_Language_Studio.pdf'; // File name for the downloaded file
-    link.click();
-  }
+  document.getElementById("download-brochure-form").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+    const form = event.target;
+
+    // Create FormData object
+    const formData = new FormData(form);
+
+    // Send request to PHP script
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Trigger the download
+          const link = document.createElement('a');
+          link.href = '../assets/Sprachenatelie_Language_Studio.pdf'; // Path to the PDF file in the assets folder
+          link.download = 'Sprachenatelie_Language_Studio.pdf'; // File name for the downloaded file
+          link.click();
+          // Reset the form and close the modal
+          form.reset();
+          MicroModal.close("modal-1");
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("An unexpected error occurred.");
+      });
+  });
 </script>

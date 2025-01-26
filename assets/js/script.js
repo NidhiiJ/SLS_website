@@ -29,30 +29,3 @@ if (!sessionStorage.getItem("modalShown")) {
   });
 }
 
-// modal form submission
-document.getElementById("download-brochure-form").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent form submission from refreshing the page
-
-  // Retrieve form values
-  const firstname = document.getElementById("modal-firstname").value;
-  const lastname = document.getElementById("modal-lastname").value;
-  const email = document.getElementById("modal-email").value;
-  const contact = document.getElementById("modal-contact").value;
-  // const message = document.getElementById("message").value;
-
-  // Prepare the data to send
-  const data = {
-    firstname: firstname,
-    lastname: lastname,
-    email: email,
-    contact: contact,
-  };
-
-  console.log(data)
-  setTimeout(() => {   
-    MicroModal.close('modal-1');
-  }, 1000);
-
-  // Reset the form
-  document.getElementById("download-brochure-form").reset()
-})
