@@ -51,15 +51,15 @@
     <div class="flex flex-col lg:flex-row gap-10 lg:gap-12 mx-5 sm:mx-14 lg:mx-[7.5rem] pt-2 sm:pt-10">
       <div class="flex flex-col gap-8 lg:w-[50vw] min-w-96">
         <h1 class="font-medium text-2xl sm:text-4xl clashdisplay">
-        Deutsch-Test für Zuwanderer (DTZ)
+          Deutsch-Test für Zuwanderer (DTZ)
         </h1>
         <div class="flex flex-col gap-8">
           <p class="text-[var(--gray-600)] text-base">
-          Professional Migrants and their Spouses, who wish to live in Germany should give this exam.
-They must first demonstrate the basic proficiency of the German language, to get the residency
-permit to be issued, which they will need to enter in Germany. It emphasizes aspects of daily life
-and community engagement.
-This test is also a part of Integrationskurse (Integration Courses)
+            Professional Migrants and their Spouses, who wish to live in Germany should give this exam.
+            They must first demonstrate the basic proficiency of the German language, to get the residency
+            permit to be issued, which they will need to enter in Germany. It emphasizes aspects of daily life
+            and community engagement.
+            This test is also a part of Integrationskurse (Integration Courses)
           </p>
           <!-- <div class="flex flex-col gap-4">
             <div class="flex gap-8 items-center">
@@ -77,13 +77,15 @@ This test is also a part of Integrationskurse (Integration Courses)
               <span class="generalsans font-medium">Proficiency level: C 2</span>
             </div>
           </div> -->
-          <button class="w-max custom-yellow-btn custom-btn-animation" data-text="Enroll Now">
-            Enroll Now
-          </button>
+          <a href="/contact.php">
+            <button class="w-max custom-yellow-btn custom-btn-animation" data-text="Enroll Now">
+              Enroll Now
+            </button>
+          </a>
         </div>
       </div>
 
-      <!-- <div class="courses-card-box after:!hidden border border-[var(--blue-100)] max-sm:!px-4"
+      <div class="courses-card-box after:!hidden border border-[var(--blue-100)] max-sm:!px-4"
         style="height: max-content">
         <div class="flex flex-col gap-2 items-start">
           <span class="clashdisplay font-medium text-[var(--gray-900)] text-[24px]">
@@ -92,34 +94,23 @@ This test is also a part of Integrationskurse (Integration Courses)
           <ul
             class="list-disc list-outside text-sm sm:text-base px-4 flex flex-col gap-2 generalsans text-[var(--gray-600)]">
             <li>
-              <span class="font-semibold">Frequency:</span> Conducted six
-              times a year in Delhi and Bangalore.
+              <span class="font-semibold">Frequency:</span> This exam is conducted in Germany alone.
             </li>
             <li>
-              <span class="font-semibold">Format:</span> Available in written
-              and digital formats (digital papers are secure and exclusive).
+              <span class="font-semibold">Format:</span> Consists of a written and oral exam.
             </li>
             <li>
-              <span class="font-semibold">Components:</span> Includes Reading
-              Comprehension, Hearing Comprehension, Written Comprehension, and
-              Communication with a German speaker.
+              <span class="font-semibold">Components:</span> This exam assesses four language skills—reading, listening,
+              writing, and speaking.
             </li>
-            <li><span class="font-semibold">Duration:</span> 4 ½ hours.</li>
+            <li><span class="font-semibold">Duration:</span> Approximately 2 hours.</li>
             <li>
-              <span class="font-semibold">Results:</span> Declared within 7-9
-              weeks.
-            </li>
-            <li>
-              <span class="font-semibold">Security:</span> Administered across
-              various time zones to prevent piracy.
-            </li>
-            <li>
-              <span class="font-semibold">Grading:</span> Papers are corrected
-              in Munich for accuracy and fairness.
+              <span class="font-semibold">Results:</span> Announced after two and a half weeks after the exam.
             </li>
           </ul>
         </div>
-      </div> -->
+      </div>
+
     </div>
 
     <!-- Brochure section -->

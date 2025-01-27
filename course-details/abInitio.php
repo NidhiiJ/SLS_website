@@ -75,13 +75,15 @@
               <span class="generalsans font-medium">Proficiency level: B2.3</span>
             </div>
           </div>
-          <button class="w-max custom-yellow-btn custom-btn-animation" data-text="Enroll Now">
-            Enroll Now
-          </button>
+          <a href="/contact.php">
+            <button class="w-max custom-yellow-btn custom-btn-animation" data-text="Enroll Now">
+              Enroll Now
+            </button>
+          </a>
         </div>
       </div>
 
-      <!-- <div class="courses-card-box after:!hidden border border-[var(--blue-100)] max-sm:!px-4"
+      <div class="courses-card-box after:!hidden border border-[var(--blue-100)] max-sm:!px-4"
         style="height: max-content">
         <div class="flex flex-col gap-2 items-start">
           <span class="clashdisplay font-medium text-[var(--gray-900)] text-[24px]">
@@ -90,34 +92,24 @@
           <ul
             class="list-disc list-outside text-sm sm:text-base px-4 flex flex-col gap-2 generalsans text-[var(--gray-600)]">
             <li>
-              <span class="font-semibold">Frequency:</span> Conducted six
-              times a year in Delhi and Bangalore.
+              <span class="font-semibold">Frequency:</span> Students who enroll themselves for the IB program get to
+              know from their respective schools in which month of the year their school will be going for the IB exam.
             </li>
             <li>
-              <span class="font-semibold">Format:</span> Available in written
-              and digital formats (digital papers are secure and exclusive).
+              <span class="font-semibold">Format:</span> Consists of a written and oral test.
             </li>
             <li>
-              <span class="font-semibold">Components:</span> Includes Reading
-              Comprehension, Hearing Comprehension, Written Comprehension, and
-              Communication with a German speaker.
+              <span class="font-semibold">Components:</span> Knowledge of vocabulary and grammar is reinforced and
+              extended by understanding audience, context, purpose, meaning, and variation.
             </li>
-            <li><span class="font-semibold">Duration:</span> 4 ½ hours.</li>
+            <li><span class="font-semibold">Duration:</span> Approximately 3-4 hours long.</li>
             <li>
-              <span class="font-semibold">Results:</span> Declared within 7-9
-              weeks.
-            </li>
-            <li>
-              <span class="font-semibold">Security:</span> Administered across
-              various time zones to prevent piracy.
-            </li>
-            <li>
-              <span class="font-semibold">Grading:</span> Papers are corrected
-              in Munich for accuracy and fairness.
+              <span class="font-semibold">Results:</span> Declared in a few weeks after the exam is conducted.
             </li>
           </ul>
         </div>
-      </div> -->
+      </div>
+
     </div>
 
     <!-- Brochure section -->

@@ -74,49 +74,44 @@
               <span class="generalsans font-medium">Proficiency level: C1</span>
             </div>
           </div>
-          <button class="w-max custom-yellow-btn custom-btn-animation" data-text="Enroll Now">
-            Enroll Now
-          </button>
+          <a href="/contact.php">
+            <button class="w-max custom-yellow-btn custom-btn-animation" data-text="Enroll Now">
+              Enroll Now
+            </button>
+          </a>
         </div>
       </div>
 
-      <!-- <div class="courses-card-box after:!hidden border border-[var(--blue-100)] max-sm:!px-4"
-        style="height: max-content">
-        <div class="flex flex-col gap-2 items-start">
-          <span class="clashdisplay font-medium text-[var(--gray-900)] text-[24px]">
-            Exam Overview
-          </span>
-          <ul
-            class="list-disc list-outside text-sm sm:text-base px-4 flex flex-col gap-2 generalsans text-[var(--gray-600)]">
-            <li>
-              <span class="font-semibold">Frequency:</span> Conducted six
-              times a year in Delhi and Bangalore.
-            </li>
-            <li>
-              <span class="font-semibold">Format:</span> Available in written
-              and digital formats (digital papers are secure and exclusive).
-            </li>
-            <li>
-              <span class="font-semibold">Components:</span> Includes Reading
-              Comprehension, Hearing Comprehension, Written Comprehension, and
-              Communication with a German speaker.
-            </li>
-            <li><span class="font-semibold">Duration:</span> 4 ½ hours.</li>
-            <li>
-              <span class="font-semibold">Results:</span> Declared within 7-9
-              weeks.
-            </li>
-            <li>
-              <span class="font-semibold">Security:</span> Administered across
-              various time zones to prevent piracy.
-            </li>
-            <li>
-              <span class="font-semibold">Grading:</span> Papers are corrected
-              in Munich for accuracy and fairness.
-            </li>
-          </ul>
-        </div>
-      </div> -->
+      <div
+  class="courses-card-box after:!hidden border border-[var(--blue-100)] max-sm:!px-4"
+  style="height: max-content"
+>
+  <div class="flex flex-col gap-2 items-start">
+    <span
+      class="clashdisplay font-medium text-[var(--gray-900)] text-[24px]"
+    >
+      Exam Overview
+    </span>
+    <ul
+      class="list-disc list-outside text-sm sm:text-base px-4 flex flex-col gap-2 generalsans text-[var(--gray-600)]"
+    >
+      <li>
+        <span class="font-semibold">Frequency:</span> Conducted in the southern part of India regularly.
+      </li>
+      <li>
+        <span class="font-semibold">Format:</span> Consists of oral and written exam.
+      </li>
+      <li>
+        <span class="font-semibold">Components:</span> Tests your reading, listening, and language skills.
+      </li>
+      <li><span class="font-semibold">Duration:</span> 2.5 to 3 hours.</li>
+      <li>
+        <span class="font-semibold">Results:</span> Declared within 4-6 weeks post exam.
+      </li>
+    </ul>
+  </div>
+</div>
+
     </div>
 
     <!-- Brochure section -->

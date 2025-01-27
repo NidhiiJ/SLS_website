@@ -100,7 +100,7 @@
               class="metric-heading tracking-wider"
               style="font-size: 0.9rem"
             >
-              STUDNETS ENROLLED
+              STUDENTS ENROLLED
             </div>
           </div>
         </div>

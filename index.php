@@ -171,7 +171,7 @@
           <div class="flex sm:hidden flex-col metric-box h-full">
             <span class="metric-heading">Students Enrolled</span>
             <span class="metric-number">29.3k</span>
-            <span class="metric-description">Lorem ipsum dolor sit amet consectetur.</span>
+            <!-- <span class="metric-description">Lorem ipsum dolor sit amet consectetur.</span> -->
           </div>
           <div class="flex sm:hidden flex-col metric-box h-full">
             <span class="metric-number">20+</span>

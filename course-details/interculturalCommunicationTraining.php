@@ -62,15 +62,14 @@
             cultural backgrounds.
           </p>
           <div class="flex flex-col gap-4">
-              <div class="flex gap-8 items-center">
-                <div
-                  class="rounded-full w-10 h-10 flex items-center justify-center p-2 bg-[var(--brand-orange-secondary)]"
-                >
-                  <img src="../assets/images/duration.svg" alt="" />
-                </div>
-                <span class="generalsans font-medium">Duration: 3 days</span>
+            <div class="flex gap-8 items-center">
+              <div
+                class="rounded-full w-10 h-10 flex items-center justify-center p-2 bg-[var(--brand-orange-secondary)]">
+                <img src="../assets/images/duration.svg" alt="" />
               </div>
-              <!-- <div class="flex gap-8 items-center">
+              <span class="generalsans font-medium">Duration: 3 days</span>
+            </div>
+            <!-- <div class="flex gap-8 items-center">
                 <div
                   class="rounded-full w-10 h-10 flex items-center justify-center p-2 bg-[var(--brand-orange-secondary)]"
                 >
@@ -80,10 +79,12 @@
                   >Proficiency level: C 2</span
                 >
               </div> -->
-            </div>
-          <button class="w-max custom-yellow-btn custom-btn-animation" data-text="Enroll Now">
-            Enroll Now
-          </button>
+          </div>
+          <a href="/contact.php">
+            <button class="w-max custom-yellow-btn custom-btn-animation" data-text="Enroll Now">
+              Enroll Now
+            </button>
+          </a>
         </div>
       </div>
 
