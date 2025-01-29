@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="../assets/css/stylesoutput.css" rel="stylesheet" />
   <link href="../assets/css/modalstyles.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/logos/SLS_icon.svg" />
   <title>SLS-Sprachenatelier Language Studio</title>
 </head>
 
@@ -186,7 +187,8 @@
             </div>
             <div
               class="shrink-0 w-full max-w-none sm:w-[40%] lg:w-1/2 sm:max-w-[24rem] h-56 lg:h-60 rounded-3xl bg-[linear-gradient(to_top_right,_#FFC360_4%,_#FFD184_30%,_#FFD999_66%)]">
-              <img src="./assets/images/admissionConsultancy/A_Counselling.jpg" class="w-full h-full object-cover rounded-3xl" alt="">
+              <img src="./assets/images/admissionConsultancy/A_Counselling.jpg"
+                class="w-full h-full object-cover rounded-3xl" alt="">
             </div>
           </div>
 
@@ -202,7 +204,8 @@
             </div>
             <div
               class="shrink-0 w-full max-w-none sm:w-[40%] lg:w-1/2 sm:max-w-[24rem] h-56 lg:h-60 rounded-3xl bg-[linear-gradient(to_top_right,_#FFC360_4%,_#FFD184_30%,_#FFD999_66%)]">
-              <img src="./assets/images/admissionConsultancy/A_Selection of Universities.jpg" class="w-full h-full object-cover rounded-3xl" alt="">
+              <img src="./assets/images/admissionConsultancy/A_Selection of Universities.jpg"
+                class="w-full h-full object-cover rounded-3xl" alt="">
             </div>
           </div>
 
@@ -219,7 +222,8 @@
             </div>
             <div
               class="shrink-0 w-full max-w-none sm:w-[40%] lg:w-1/2 sm:max-w-[24rem] h-56 lg:h-60 rounded-3xl bg-[linear-gradient(to_top_right,_#FFC360_4%,_#FFD184_30%,_#FFD999_66%)]">
-              <img src="./assets/images/admissionConsultancy/A_Preparation of documents.jpg" class="w-full h-full object-cover rounded-3xl" alt="">
+              <img src="./assets/images/admissionConsultancy/A_Preparation of documents.jpg"
+                class="w-full h-full object-cover rounded-3xl" alt="">
             </div>
           </div>
 
@@ -235,7 +239,8 @@
             </div>
             <div
               class="shrink-0 w-full max-w-none sm:w-[40%] lg:w-1/2 sm:max-w-[24rem] h-56 lg:h-60 rounded-3xl bg-[linear-gradient(to_top_right,_#FFC360_4%,_#FFD184_30%,_#FFD999_66%)]">
-              <img src="./assets/images/admissionConsultancy/A_Preparation of documents for visa.jpg" class="w-full h-full object-cover rounded-3xl" alt="">
+              <img src="./assets/images/admissionConsultancy/A_Preparation of documents for visa.jpg"
+                class="w-full h-full object-cover rounded-3xl" alt="">
             </div>
           </div>
 
@@ -250,7 +255,8 @@
             </div>
             <div
               class="shrink-0 w-full max-w-none sm:w-[40%] lg:w-1/2 sm:max-w-[24rem] h-56 lg:h-60 rounded-3xl bg-[linear-gradient(to_top_right,_#FFC360_4%,_#FFD184_30%,_#FFD999_66%)]">
-              <img src="./assets/images/admissionConsultancy/A_Cultural sensitization.jpg" class="w-full h-full object-cover rounded-3xl" alt="">
+              <img src="./assets/images/admissionConsultancy/A_Cultural sensitization.jpg"
+                class="w-full h-full object-cover rounded-3xl" alt="">
             </div>
           </div>
         </div>

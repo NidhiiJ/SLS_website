@@ -19,16 +19,16 @@
               <!-- Social Links -->
               <div class="flex h-4 space-x-4">
                 <a href="https://www.facebook.com/sprachenateliermumbai/" class="h-full text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/facebook-link.svg" class="h-full w-full" alt="" />
+                  <img src="/assets/images/facebook-link.svg" class="h-full w-full" alt="" />
                 </a>
                 <a href=" https://www.youtube.com/channel/UC8JpxU-LOBCNMc-Rj7kSYAw " class="h-full text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/youtube-link.svg" class="h-full w-full" alt="" />
+                  <img src="/assets/images/youtube-link.svg" class="h-full w-full" alt="" />
                 </a>
                 <a href="https://www.instagram.com/sprachenatelier_languagestudio/" class="h-full text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/instagram-link.svg" class="h-full w-full" alt="" />
+                  <img src="/assets/images/instagram-link.svg" class="h-full w-full" alt="" />
                 </a>
                 <a href=" https://in.linkedin.com/in/frau-ujwal-anil-948859114" class="h-full text-orange-500 hover:text-orange-600">
-                  <img src="assets/images/linkedin-link.svg" class="h-full w-full" alt="" />
+                  <img src="/assets/images/linkedin-link.svg" class="h-full w-full" alt="" />
                 </a>
               </div>
             </div>
@@ -64,11 +64,11 @@
                 <h3 class="footer-column-heading">CONTACT</h3>
                 <div class="footer-column-links">
                   <div class="footer-contact-link">
-                    <img src="assets/images/phone-icon.svg" alt="" />
-                    <a href="tel:+912020213213">+91 20202 13213</a>
+                    <img src="/assets/images/phone-icon.svg" alt="" />
+                    <a href="tel:+912020213213">+91 98212 37293</a>
                   </div>
                   <div class="footer-contact-link">
-                    <img src="assets/images/mail-icon.svg" alt="" />
+                    <img src="/assets/images/mail-icon.svg" alt="" />
                     <a
                       href="mailto:languagelearning@sprachenatelier.in"
                       class="break-all"

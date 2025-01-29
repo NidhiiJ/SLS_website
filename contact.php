@@ -43,8 +43,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 alert('Oops! An unexpected error occurred. Failed to send Email.');
                 window.location.href = 'contact.php';
               </script>";
-            }
-            exit;
+  }
+  exit;
 }
 ?>
 <!DOCTYPE html>
@@ -55,6 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="../assets/css/stylesoutput.css" rel="stylesheet" />
   <link href="../assets/css/modalstyles.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="/assets/logos/SLS_icon.svg" />
   <title>SLS-Sprachenatelier Language Studio</title>
 </head>
 
