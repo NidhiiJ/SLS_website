@@ -72,19 +72,19 @@
                             by Sprachenatelier that you need to ace to study in Germany.
                         </p>
                         <div class="exam-container">
-                            <strong class="text-md md:text-lg">1. TestDaF Examination (Test Deutsch als
-                                Fremdsprache)</strong>
+                            <h3 class="text-md md:text-lg">1. TestDaF Examination (Test Deutsch als
+                                Fremdsprache)</h3>
                             <p class="text-[var(--gray-600)] text-base">TestDaF is a mandatory examination for students
                                 aiming to study at German universities. It is recognized across all German-speaking
                                 countries and tests your proficiency in academic German.</p>
                             <ul class="pl-10 list-disc">
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Who
-                                        Should Take It?</strong> Students planning to pursue higher education in
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Who
+                                        Should Take It?</h3> Students planning to pursue higher education in
                                     Germany.</li>
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Key
-                                        Features:</strong> Focus on scientific terms across various fields.</li>
-                                <li class="text-[var(--gray-600)] text-base"><strong
-                                        class="text-[var(--gray-900)]">Preparation Tips:</strong>
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Key
+                                        Features:</h3> Focus on scientific terms across various fields.</li>
+                                <li class="text-[var(--gray-600)] text-base"><h3
+                                        class="text-[var(--gray-900)]">Preparation Tips:</h3>
                                     <ul class="pl-10" style="list-style-type:circle">
                                         <li class="text-[var(--gray-600)] text-base">Practice reading and writing
                                             academic texts.</li>
@@ -95,20 +95,20 @@
                             </ul>
                         </div>
                         <div class="exam-container">
-                            <strong class="text-md md:text-lg">2. Telc Examination</strong>
+                            <h3 class="text-md md:text-lg">2. Telc Examination</h3>
                             <p class="text-[var(--gray-600)] text-base">The Telc (The European Language Certificates)
                                 exam is ideal for students planning to study in Austria or Germany, especially those
                                 pursuing careers in medicine. This exam is widely accepted by universities and
                                 institutions.</p>
                             <ul class="pl-10 list-disc">
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Who
-                                        Should Take It?</strong> Medical students or professionals planning to work in
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Who
+                                        Should Take It?</h3> Medical students or professionals planning to work in
                                     German-speaking countries.</li>
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Key
-                                        Features:</strong> Tests practical and academic German for specific purposes.
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Key
+                                        Features:</h3> Tests practical and academic German for specific purposes.
                                 </li>
-                                <li class="text-[var(--gray-600)] text-base"><strong
-                                        class="text-[var(--gray-900)]">Preparation Tips:</strong>
+                                <li class="text-[var(--gray-600)] text-base"><h3
+                                        class="text-[var(--gray-900)]">Preparation Tips:</h3>
                                     <ul class="pl-10" style="list-style-type:circle">
                                         <li class="text-[var(--gray-600)] text-base">Join Sprachenatelier’s targeted
                                             Telc exam training program.</li>
@@ -119,20 +119,20 @@
                             </ul>
                         </div>
                         <div class="exam-container">
-                            <strong class="text-md md:text-lg">3. DSH Examination (Deutsche Sprachprüfung für den
-                                Hochschulzugang)</strong>
+                            <h3 class="text-md md:text-lg">3. DSH Examination (Deutsche Sprachprüfung für den
+                                Hochschulzugang)</h3>
                             <p class="text-[var(--gray-600)] text-base">The DSH exam is a German language proficiency
                                 test available only in Germany, designed for students seeking entry into German
                                 universities.</p>
                             <ul class="pl-10 list-disc">
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Who
-                                        Should Take It?</strong> Students needing proof of advanced German skills for
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Who
+                                        Should Take It?</h3> Students needing proof of advanced German skills for
                                     admission.</li>
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Key
-                                        Features:</strong> Focus on listening, reading, and academic writing skills.
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Key
+                                        Features:</h3> Focus on listening, reading, and academic writing skills.
                                 </li>
-                                <li class="text-[var(--gray-600)] text-base"><strong
-                                        class="text-[var(--gray-900)]">Preparation Tips:</strong>
+                                <li class="text-[var(--gray-600)] text-base"><h3
+                                        class="text-[var(--gray-900)]">Preparation Tips:</h3>
                                     <ul class="pl-10" style="list-style-type:circle">
                                         <li class="text-[var(--gray-600)] text-base">Leverage Sprachenatelier’s DSH exam
                                             training for intensive grammar and speaking practice.</li>
@@ -143,20 +143,20 @@
                             </ul>
                         </div>
                         <div class="exam-container">
-                            <strong class="text-md md:text-lg">4. Ab Initio, SL, and HL German Examination of
-                                IB</strong>
+                            <h3 class="text-md md:text-lg">4. Ab Initio, SL, and HL German Examination of
+                                IB</h3>
                             <p class="text-[var(--gray-600)] text-base">Designed by the International Baccalaureate
                                 (IB), these exams introduce foreign languages and cultures to students. These
                                 certificates add value to university applications in Germany.</p>
                             <ul class="pl-10 list-disc">
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Who
-                                        Should Take It?</strong> High school students studying under the IB curriculum.
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Who
+                                        Should Take It?</h3> High school students studying under the IB curriculum.
                                 </li>
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Key
-                                        Features:</strong> Focus on basic (Ab Initio) to advanced (SL/HL) German
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Key
+                                        Features:</h3> Focus on basic (Ab Initio) to advanced (SL/HL) German
                                     proficiency.</li>
-                                <li class="text-[var(--gray-600)] text-base"><strong
-                                        class="text-[var(--gray-900)]">Preparation Tips:</strong>
+                                <li class="text-[var(--gray-600)] text-base"><h3
+                                        class="text-[var(--gray-900)]">Preparation Tips:</h3>
                                     <ul class="pl-10" style="list-style-type:circle">
                                         <li class="text-[var(--gray-600)] text-base">Enroll in Sprachenatelier’s courses
                                             for tailored IB exam training.</li>
@@ -167,18 +167,18 @@
                             </ul>
                         </div>
                         <div class="exam-container">
-                            <strong class="text-md md:text-lg">5. Deutsch-Test für Zuwanderer (DTZ)</strong>
+                            <h3 class="text-md md:text-lg">5. Deutsch-Test für Zuwanderer (DTZ)</h3>
                             <p class="text-[var(--gray-600)] text-base">This exam is mandatory for professionals
                                 planning to live and work in Germany. It focuses on practical language skills for daily
                                 life and community engagement.</p>
                             <ul class="pl-10 list-disc">
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Who
-                                        Should Take It?</strong> Individuals seeking residency or employment in Germany.
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Who
+                                        Should Take It?</h3> Individuals seeking residency or employment in Germany.
                                 </li>
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Key
-                                        Features:</strong> Tests basic to intermediate language skills (A2-B1).</li>
-                                <li class="text-[var(--gray-600)] text-base"><strong
-                                        class="text-[var(--gray-900)]">Preparation Tips:</strong>
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Key
+                                        Features:</h3> Tests basic to intermediate language skills (A2-B1).</li>
+                                <li class="text-[var(--gray-600)] text-base"><h3
+                                        class="text-[var(--gray-900)]">Preparation Tips:</h3>
                                     <ul class="pl-10" style="list-style-type:circle">
                                         <li class="text-[var(--gray-600)] text-base">Join Sprachenatelier’s DTZ-specific
                                             training for practical communication skills.</li>
@@ -189,18 +189,18 @@
                             </ul>
                         </div>
                         <div class="exam-container">
-                            <strong class="text-md md:text-lg">6. Intercultural Communication Training</strong>
+                            <h3 class="text-md md:text-lg">6. Intercultural Communication Training</h3>
                             <p class="text-[var(--gray-600)] text-base">Unlike traditional exams, Sprachenatelier also
                                 offers workshops focusing on cultural sensitization. These training programs help
                                 students and professionals adapt to German culture, traditions, and laws.</p>
                             <ul class="pl-10 list-disc">
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Who
-                                        Should Take It?</strong> Anyone planning to integrate into German society.</li>
-                                <li class="text-[var(--gray-600)] text-base"><strong class="text-[var(--gray-900)]">Key
-                                        Features:</strong> Emphasis on understanding German culture, values, and
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Who
+                                        Should Take It?</h3> Anyone planning to integrate into German society.</li>
+                                <li class="text-[var(--gray-600)] text-base"><h3 class="text-[var(--gray-900)]">Key
+                                        Features:</h3> Emphasis on understanding German culture, values, and
                                     communication styles.</li>
-                                <li class="text-[var(--gray-600)] text-base"><strong
-                                        class="text-[var(--gray-900)]">Preparation Tips:</strong>
+                                <li class="text-[var(--gray-600)] text-base"><h3
+                                        class="text-[var(--gray-900)]">Preparation Tips:</h3>
                                     <ul class="pl-10" style="list-style-type:circle">
                                         <li class="text-[var(--gray-600)] text-base">Attend Sprachenatelier’s high-end
                                             workshops.</li>
