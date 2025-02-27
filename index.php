@@ -442,7 +442,7 @@
           </div>
         </div> -->
         <div class="blog-card">
-          <img src="../assets/images/blog-cover-1.jpg" alt="" />
+        <img src="../assets/images/blogs/people-holding-pinwheels.jpg" alt="" />
           <div class="blog-details-wrapper">
             <div class="Blog-details-container">
               <span class="blog-category">Informative - 18 January, 2025</span>
@@ -462,7 +462,7 @@
           </div>
         </div>
         <div class="blog-card">
-          <img src="../assets/images/blog-cover-1.jpg" alt="" />
+        <img src="../assets/images/blogs/young-students-campus-helps-friend-catching-up-learning.jpg" alt="" />
           <div class="blog-details-wrapper">
             <div class="Blog-details-container">
               <span class="blog-category">Informative - 10 January, 2025</span>
@@ -481,7 +481,7 @@
           </div>
         </div>
         <div class="blog-card  max-lg:!hidden">
-          <img src="../assets/images/blog-cover-1.jpg" alt="" />
+        <img src="../assets/images/blogs/berlin-reichstag-building-bundestag-parliament-government-germany.jpg" alt="" />
           <div class="blog-details-wrapper">
             <div class="Blog-details-container">
               <span class="blog-category">Informative - 25 January, 2025</span>
