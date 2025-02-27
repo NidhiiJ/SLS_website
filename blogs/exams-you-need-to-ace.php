@@ -49,7 +49,7 @@
             </div>
 
             <div class="flex flex-col lg:flex-row gap-10 lg:gap-12 mx-5 sm:mx-14 lg:mx-[7.5rem] pt-2 sm:pt-10">
-                <div class="flex flex-col gap-8 w-full min-w-96">
+                <div class="flex flex-col gap-8 w-full">
                     <h1 class="font-medium text-2xl sm:text-4xl clashdisplay">
                         Exams You Need to Ace to Study in Germany: A Comprehensive Guide
                     </h1>
